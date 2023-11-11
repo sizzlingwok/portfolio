@@ -1,0 +1,68 @@
+.opacity-in-animation {
+    animation: fadeInOpacity 2s ease 1s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* Fade up animation */
+.fade-up-animation {
+    --animation-delay: 0s;
+    transform: translateY(5rem);
+    opacity: 0;
+    animation: fadeUpAnimation 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) var(--animation-delay) forwards;
+}
+
+@keyframes fadeUpAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Offscreen fade up animation */
+.offscreen-up {
+    --animation-delay: 0s;
+    opacity: 0;
+    animation: offscreen-up 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) var(--animation-delay) forwards;
+}
+
+@keyframes offscreen-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* transition.jsx */
+.slide-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #00bfff;
+    transform-origin: bottom;
+}
+
+.slide-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #00bfff;
+    transform-origin: top;
+}
+  
