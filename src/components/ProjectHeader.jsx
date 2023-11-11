@@ -20,17 +20,17 @@ function ProjectHeader({ title, description1, description2, role, tools, timelin
             <div className="project-header-details">
               <hr className="divider" />
               <div className="project-description-wrapper">
-                <div className="project-description splitword noscrolltrigger">{description1}</div>
-                <div className="project-description splitword long noscrolltrigger">{description2}</div>
+                <div className="project-description splitword">{description1}</div>
+                <div className="project-description splitword long">{description2}</div>
               </div>
               <div className="list-container">
-                <div className="project-description">
+                <div className="project-description splitletter short">
                   <b>Role</b> - {role}
                 </div>
-                <div className="project-description">
+                <div className="project-description splitletter short">
                   <b>Tools</b> - {tools}
                 </div>
-                <div className="project-description">
+                <div className="project-description splitletter short">
                   <b>Timeline</b> - {timeline}
                 </div>
               </div>

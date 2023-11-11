@@ -85,45 +85,6 @@ export const ExpandDivider = () => {
   }, []);
 };
 
-
-
-// const elements = gsap.utils.toArray('*[class*="splitword"]');
-// elements.forEach((element) => {
-//   const textsplit = new SplitType(element, { types: "words" });
-//   const words = textsplit.words;
-//   gsap.set(words, { opacity: 0 });
-
-//   let animation;
-//   const animateIn = () => {
-//     if (animation && animation.isActive()) {
-//       return;
-//     }
-//     animation = gsap.fromTo(
-//       '.splitword',
-//       { x: -10, rotationX: 45, opacity: 0 },
-//       {
-//         x: 0,
-//         rotationX: 0,
-//         opacity: 1,
-//         overwrite: true,
-//         stagger: 0.02,
-//         duration: 2,
-//         ease: "power3.out",
-//       }
-//     );
-//   };
-
-//   gsap.from(element, {
-//     scrollTrigger: {
-//       trigger: element,
-//       start: "-100vh bottom",
-//       scrub: true,
-//       markers: true,
-//       onEnter: animateIn,
-//     },
-//   });
-// });
-
 export const SplitWord = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -159,14 +120,11 @@ export const SplitWord = () => {
             }
           },
           scrub: true,
-          markers: true,
         });
       });
     });
 
-    return () => { 
-      ctx.revert();
-    };
+    return () => ctx.revert();
   }, []);
 };
 
@@ -175,8 +133,8 @@ export const SplitLetter = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const elements = gsap.utils.toArray('.splitletter');
-
       elements.forEach((element) => {
+        const staggerValue = element.classList.contains('short') ? 0.03 : 0.05;
         const textsplit = new SplitType(element, { types: 'chars' });
         const letters = textsplit.chars;
         gsap.fromTo(
@@ -186,7 +144,7 @@ export const SplitLetter = () => {
             x: 0,
             opacity: 1,
             duration: 2,
-            stagger: 0.05,
+            stagger: staggerValue,
             ease: 'power3.out',
           }
         );
