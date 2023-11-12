@@ -93,7 +93,7 @@ export const SplitWord = () => {
         const words = textsplit.words;
         const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
         gsap.set(words, { opacity: 0 });
-          gsap.fromTo(
+        return gsap.fromTo(
           words,
           { x: -10, rotationX: 45, opacity: 0 },
           {
@@ -113,7 +113,7 @@ export const SplitWord = () => {
 
         ScrollTrigger.create({
           trigger: element,
-          start: 'top top',
+          start: 'top bottom',
           onEnter: () => {
             if (!animation || !animation.isActive()) {
               animation = animateIn(element);
@@ -127,9 +127,52 @@ export const SplitWord = () => {
 
     return () => { 
       ctx.revert();
-    }
+    };
   }, []);
 };
+// export const SplitWord = () => {
+//   useEffect(() => {
+//     const ctx = gsap.context(() => {
+//       const animateIn = (element) => {
+//         const textsplit = new SplitType(element, { types: 'words' });
+//         const words = textsplit.words;
+//         const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
+//         gsap.set(words, { opacity: 0 });
+//           gsap.fromTo(
+//           words,
+//           { x: -10, rotationX: 45, opacity: 0 },
+//           {
+//             x: 0,
+//             rotationX: 0,
+//             opacity: 1,
+//             duration: 2,
+//             stagger: staggerValue,
+//             ease: 'power3.out',
+//             overwrite: true,
+//           }
+//         );
+//       };
+
+//       gsap.utils.toArray('.splitword').forEach((element) => {
+//         let animation;
+
+//         ScrollTrigger.create({
+//           trigger: element,
+//           start: 'top top',
+//           onEnter: () => {
+//             if (!animation || !animation.isActive()) {
+//               animation = animateIn(element);
+//             }
+//           },
+//           scrub: true,
+//           markers: true,
+//         });
+//       });
+//     });
+
+//     return () => ctx.revert();
+//   }, []);
+// };
 
 
 export const SplitWordHeader = () => {
@@ -139,9 +182,9 @@ export const SplitWordHeader = () => {
       elements.forEach((element) => {
         const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
         const textsplit = new SplitType(element, { types: 'words' });
-        const letters = textsplit.words;
+        const words = textsplit.words;
         gsap.fromTo(
-          letters,
+          words,
           { x: 10, opacity: 0 },
           {
             x: 0,
