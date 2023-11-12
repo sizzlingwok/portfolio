@@ -93,7 +93,7 @@ export const SplitWord = () => {
         const words = textsplit.words;
         const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
         gsap.set(words, { opacity: 0 });
-        return gsap.fromTo(
+          gsap.fromTo(
           words,
           { x: -10, rotationX: 45, opacity: 0 },
           {
@@ -113,21 +113,50 @@ export const SplitWord = () => {
 
         ScrollTrigger.create({
           trigger: element,
-          start: 'top bottom',
+          start: 'top top',
           onEnter: () => {
             if (!animation || !animation.isActive()) {
               animation = animateIn(element);
             }
           },
           scrub: true,
+          markers: true,
         });
       });
     });
 
-    return () => ctx.revert();
+    return () => { 
+      ctx.revert();
+    }
   }, []);
 };
 
+
+export const SplitWordHeader = () => {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const elements = gsap.utils.toArray('.splitwordheader');
+      elements.forEach((element) => {
+        const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
+        const textsplit = new SplitType(element, { types: 'words' });
+        const letters = textsplit.words;
+        gsap.fromTo(
+          letters,
+          { x: 10, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 2,
+            stagger: staggerValue,
+            ease: 'power3.out',
+          }
+        );
+      });
+
+      return () => ctx.revert();
+    });
+  }, []);
+};
 
 export const SplitLetter = () => {
   useEffect(() => {

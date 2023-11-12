@@ -1,5 +1,4 @@
 import Footer from "../components/Footer"
-// import { SlideUp, ExpandDivider } from '../components/Animations';
 import ProjectHeader from "../components/ProjectHeader";
 import ImageHeader from "../components/ImageHeader";
 import VideoPreview from "../components/VideoPreview";

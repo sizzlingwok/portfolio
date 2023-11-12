@@ -241,8 +241,6 @@ border-color:rgba(255, 255, 255, 0.25);
   gap: 2rem;
   display: flex;
   flex-direction: column;
-  max-width: 100rem;
-  height: auto;
   user-select: none;
   width: auto;
 }
