@@ -176,6 +176,14 @@
         gap: 3rem;
     }
 
+    .project-header-wrapper {
+        height: calc(100vh - 6rem);
+    }
+
+    .project-header-container {
+        padding-bottom: 10rem;
+    }
+
     .project {
         flex-direction: column;
         gap: 1rem;
