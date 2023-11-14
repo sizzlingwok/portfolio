@@ -2,11 +2,10 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  align-items: center;
+  height: 10rem;
   padding-left: calc(2rem + 5%);
   padding-right: calc(2rem + 5%);
-  flex-grow: 1;
   background: none;
   position: sticky;
   top: 0;
@@ -243,6 +242,7 @@ border-color:rgba(255, 255, 255, 0.25);
   flex-direction: column;
   user-select: none;
   width: auto;
+  padding-bottom: 10rem;
 }
 
 .fs-bg {
@@ -325,7 +325,7 @@ border-color:rgba(255, 255, 255, 0.25);
 }
 
 .project-header-wrapper {
-  height: 100vh;
+  height: calc(100vh - 10rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
