@@ -85,115 +85,74 @@ export const ExpandDivider = () => {
   }, []);
 };
 
-export const SplitWord = () => {
+export const SplitWordHeader = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const animateIn = (element) => {
-        const textsplit = new SplitType(element, { types: 'words' });
-        const words = textsplit.words;
-        const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
-        gsap.set(words, { opacity: 0 });
-        return gsap.fromTo(
-          words,
-          { x: -10, rotationX: 45, opacity: 0 },
+      const elements = gsap.utils.toArray(".splitwordheader");
+
+      elements.forEach((element) => {
+        const staggerValue = element.classList.contains("long") ? 0.04 : 0.02;
+        const textsplit = new SplitType(element, { types: "words" });
+
+        gsap.fromTo(
+          textsplit.words,
+          {
+            x: 10,
+            rotationX: 45,
+            opacity: 0,
+          },
           {
             x: 0,
             rotationX: 0,
             opacity: 1,
             duration: 2,
             stagger: staggerValue,
-            ease: 'power3.out',
-            overwrite: true,
+            ease: "power3.out",
           }
         );
-      };
+      });
+      return () => ctx.revert();
+    });
+  }, []);
+};
 
-      gsap.utils.toArray('.splitword').forEach((element) => {
+export const SplitWord = () => {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const elements = gsap.utils.toArray('.splitword');
+
+      elements.forEach((element) => {
         let animation;
+        const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
+        const textsplit = new SplitType(element, { types: 'words' });
 
         ScrollTrigger.create({
           trigger: element,
           start: 'top bottom',
           onEnter: () => {
             if (!animation || !animation.isActive()) {
-              animation = animateIn(element);
+              animation = gsap.fromTo(
+                textsplit.words,
+                {
+                  x: -10,
+                  rotationX: 45,
+                  opacity: 0,
+                },
+                {
+                  x: 0,
+                  rotationX: 0,
+                  opacity: 1,
+                  duration: 2,
+                  stagger: staggerValue,
+                  ease: 'power3.out',
+                  overwrite: true,
+                }
+              );
             }
           },
           scrub: true,
           markers: true,
         });
-      });
-    });
-
-    return () => { 
-      ctx.revert();
-    };
-  }, []);
-};
-// export const SplitWord = () => {
-//   useEffect(() => {
-//     const ctx = gsap.context(() => {
-//       const animateIn = (element) => {
-//         const textsplit = new SplitType(element, { types: 'words' });
-//         const words = textsplit.words;
-//         const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
-//         gsap.set(words, { opacity: 0 });
-//           gsap.fromTo(
-//           words,
-//           { x: -10, rotationX: 45, opacity: 0 },
-//           {
-//             x: 0,
-//             rotationX: 0,
-//             opacity: 1,
-//             duration: 2,
-//             stagger: staggerValue,
-//             ease: 'power3.out',
-//             overwrite: true,
-//           }
-//         );
-//       };
-
-//       gsap.utils.toArray('.splitword').forEach((element) => {
-//         let animation;
-
-//         ScrollTrigger.create({
-//           trigger: element,
-//           start: 'top top',
-//           onEnter: () => {
-//             if (!animation || !animation.isActive()) {
-//               animation = animateIn(element);
-//             }
-//           },
-//           scrub: true,
-//           markers: true,
-//         });
-//       });
-//     });
-
-//     return () => ctx.revert();
-//   }, []);
-// };
-
-
-export const SplitWordHeader = () => {
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const elements = gsap.utils.toArray('.splitwordheader');
-      elements.forEach((element) => {
-        const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
-        const textsplit = new SplitType(element, { types: 'words' });
-        const words = textsplit.words;
-        gsap.fromTo(
-          words,
-          { x: 10, opacity: 0 },
-          {
-            x: 0,
-            opacity: 1,
-            duration: 2,
-            stagger: staggerValue,
-            ease: 'power3.out',
-          }
-        );
       });
 
       return () => ctx.revert();
@@ -237,7 +196,7 @@ export const EndingNavAnimation = () => {
           return;
         }
 
-        animation = gsap.fromTo(
+        gsap.fromTo(
           ".prev-nav",
           { opacity: 0, x: 40 },
           { opacity: 1, x: 0, duration: 1, ease: "power2.out", overwrite: true }

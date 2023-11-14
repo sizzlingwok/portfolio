@@ -24,13 +24,13 @@ function ProjectHeader({ title, description1, description2, role, tools, timelin
                 <div className="project-description splitwordheader long">{description2}</div>
               </div>
               <div className="list-container">
-                <div className="project-description splitletter short">
+                <div className="project-description splitwordheader long">
                   <b>Role</b> - {role}
                 </div>
-                <div className="project-description splitletter short">
+                <div className="project-description splitwordheader long">
                   <b>Tools</b> - {tools}
                 </div>
-                <div className="project-description splitletter short">
+                <div className="project-description splitwordheader long">
                   <b>Timeline</b> - {timeline}
                 </div>
               </div>

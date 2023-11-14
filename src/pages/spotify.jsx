@@ -201,7 +201,6 @@ function Spotify() {
                 address the central problem statement
               </>
             }
-            comboClass="ending"
           />
           <hr className="divider" />
           <BodyTextSplit
