@@ -8,10 +8,10 @@
   padding-right: calc(2rem + 5%);
   flex-grow: 1;
   background: none;
-  position: fixed;
+  position: sticky;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
   user-select: none;
 }
 
