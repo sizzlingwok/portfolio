@@ -151,7 +151,6 @@ export const SplitWord = () => {
             }
           },
           scrub: true,
-          markers: true,
         });
       });
 
