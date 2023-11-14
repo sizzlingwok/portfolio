@@ -133,6 +133,8 @@
         padding-left: calc(1rem + 5%);
         padding-right: calc(1rem + 5%);
         width: auto;
+        padding-bottom: 6rem;
+        height: calc(100vh - 6rem);
     }
     .greet {
         font-size: 2.5rem;
@@ -175,9 +177,13 @@
         padding-right: calc(1rem + 5%);
         gap: 3rem;
     }
-
+    .project-button {
+        padding: 1rem;
+    }
+    
     .project-header-wrapper {
         height: calc(100vh - 6rem);
+        justify-content: initial;
     }
 
     .project-header-container {
@@ -285,4 +291,9 @@
 
 }
 
-
+@media (max-width: 640px) {
+    .project-header-wrapper {
+        height: calc(100vh - 6rem);
+        justify-content: initial;
+    }
+}
