@@ -12,6 +12,7 @@
   left: 0;
   right: 0;
   user-select: none;
+  z-index: 1000;
 }
 
 .header-name {
@@ -197,7 +198,7 @@ border-color:rgba(255, 255, 255, 0.25);
 .right-align-thumbnail-container {
   max-width: 100%;
   height: auto;
-  width: 60%;
+
 }
 
 .right-align {
@@ -271,7 +272,7 @@ border-color:rgba(255, 255, 255, 0.25);
 .project-content-wrapper {
   background-color: #111111;
   width: auto;
-  height: 100vh;
+  height: auto;
 }
 
 .project-content {

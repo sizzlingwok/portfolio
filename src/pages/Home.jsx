@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
-import transition from "../transition";
+
 function Home() {
   return (
     <div className="main">
@@ -38,14 +38,16 @@ function Home() {
             <div className="title">sorette</div>
             <div className="description">Project Description</div>
           </div>
-          <div className="right-align-thumbnail-container">
-            <img
-              className="thumbnail"
-              src="images/home/img2.jpeg"
-              alt=""
-              draggable="false"
-            />
-          </div>
+          <Link to="/sorette">
+            <div className="right-align-thumbnail-container">
+              <img
+                className="thumbnail"
+                src="images/home/img2.jpeg"
+                alt=""
+                draggable="false"
+              />
+            </div>
+          </Link>
         </div>
         <div className="wide-wrapper">
           <div className="thumbnail-container wide">

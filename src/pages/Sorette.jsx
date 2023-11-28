@@ -7,19 +7,19 @@ import ArchImages from "../components/ArcImages";
 import EndingNav from "../components/EndingNav";
 import { ExpandDivider } from "../components/Animations";
 
-function Spotify() {
+function Sorette() {
   ExpandDivider();
   return (
     <div className="main">
       <ProjectHeader
-        title="Spotify Party"
-        description1="Spotify Party strives to enhance the listening experience for users who enjoy music with others. While creating group sessions already exists on Spotify, it currently falls short in terms of functionality and could greatly benefit from improvements. Spotify Party will not only strengthen its current group session capabilities, but will also introduce captivating new features to foster an immersive and enjoyable journey of music exploration."
-        description2="I redesigned the elements in the current Spotify UI in Figma on both the mobile and desktop version of the app. I then implemented my design ideas and created functioning prototypes."
+        title="sorette"
+        description1="sorette is an innovative desktop cloud-sharing service designed for music professionals, offering seamless collaboration opportunities. The primary objective of sorette is to empower music professionals with a powerful cloud-sharing platform, enhancing collaboration and creativity. It provides a suite of crafted tools and customization options to streamline workflows, simplify file organization, and foster a user-friendly environment conducive to enhanced productivity."
+        description2="The existing cloud-sharing platforms are deficient in providing specialized collaboration tools and features that are crucial for an enhanced user experience. I focused on designing sorette to create features that would adapt to the ease of collaborating with others."
         role="UI/UX Designer"
         tools="Figma, Google Forms, Optimal Workshop"
-        timeline="8 weeks (June - July 2023)"
-        videoSrc="https://ik.imagekit.io/hyikkegqv/spotifysessionplaylist.mp4"
-        prototypeLink="https://www.figma.com/proto/5ciCRD3R2H8jz0fRfKJPJD/Spotify-Party-Landing-Page?page-id=0%3A1&type=design&node-id=1-2&viewport=1334%2C874%2C0.71&t=MT5QwGlDdOlSKv5J-1&scaling=scale-down"
+        timeline="13 weeks (Mar - June 2023)"
+        videoSrc="https://ik.imagekit.io/hyikkegqv/sorettesearch.mp4"
+        prototypeLink="https://www.figma.com/proto/gAKgOfJEIndvJweTn2Yg0l/sorette?page-id=0%3A1&type=design&node-id=1-51&viewport=-1204%2C721%2C0.42&scaling=scale-down&starting-point-node-id=1%3A51"
       />
       <div id="project" className="project-content-wrapper">
         <div className="project-content">
@@ -41,55 +41,111 @@ function Spotify() {
           <BodyTextSplit
             text1={
               <>
-                <b>Final Solution</b> - Evolving the group listening experience
-                by introducing improved functionality and features for all
-                Spotify users
+                <b>Final Solution</b> - Creating an innovative app equipped with
+                specialized collaboration tools to bridge the gaps in
+                functionality found in current cloud-sharing platforms
               </>
             }
-            text2="Below are some of the distinct features that have been integrated into Spotify Party"
+            text2="Below are some of the main features implemented into the sorette platform"
             comboClass="splitword"
           />
           <div className="preview-wrapper">
             <VideoPreview
-              videoSrc="https://ik.imagekit.io/hyikkegqv/spotifyinvitefriend.mp4"
-              title="Invite friends directly from the Friend Activity list"
-              description="Easily invite friends directly within the app, eliminating
-              the need for external invitations through links or social
-              media."
+              videoSrc="https://ik.imagekit.io/hyikkegqv/sorettesearch.mp4"
+              title="Advanced file organization and search tools"
+              description="Boost productivity with robust file tagging and powerful search features. Organize and manage files effortlessly."
             />
             <VideoPreview
-              videoSrc="https://ik.imagekit.io/hyikkegqv/spotifygroupsetting.mp4"
-              title="Moderate your group sessions"
-              description="Manage your sessions with customizable group settings.
-              Grant admin privileges to others or enable/disable
-              specific options, all geared towards providing a seamless
-              and enjoyable session."
+              videoSrc="https://ik.imagekit.io/hyikkegqv/soretteinvite.mp4"
+              title="Invite collabators to projects and folders"
+              description="Invite others for a dynamic collaborative experience. Stay up to date with project version history."
             />
             <VideoPreview
-              videoSrc="https://ik.imagekit.io/hyikkegqv/spotifysessionplaylist.mp4"
-              title="Automatically receive curated group session playlists"
-              description="Relive the experience of previous group sessions by
-              receiving curated playlists of tracks played. Replay any
-              queued song whose title you may have missed before or
-              share the playlists with others."
+              videoSrc="https://ik.imagekit.io/hyikkegqv/notifcationcenter.mp4"
+              title="Built-in notification center"
+              description="Streamline engagements and collaborations with a centralized notification hub, enhancing organization and responsiveness."
             />
             <hr className="divider" />
           </div>
           <BodyTextSplit
             text1={
               <>
-                <b>User Research</b> - Evaluating the user flow for initiating a
-                Spotify group session
+                <b>User Research</b> - Users have limited collaboration features
+                resulting in inefficient workflows and difficulty in maintaining
+                a centralized place for collaborators to access content
               </>
             }
             text2={
               <>
-                In the initial phase, I assessed users' ability to navigate to
-                the group session menu through a first-click test with{" "}
-                <b>7 participants</b> on the Spotify mobile app. While I planned
-                to extend the test to the desktop platform, the feature was
-                exclusive to mobile. Despite this limitation, the early findings
-                provided crucial insights for subsequent analyses.
+                In the preliminary stage, I conducted a comprehensive evaluation
+                of user feedback pertaining to the concurrent collaboration
+                system. I engaged with <b>5 participants</b> to gather their
+                valuable thoughts and insights.
+              </>
+            }
+          />
+          <BodyTextSplit
+            text1={
+              <>
+                <b>A word from our participants</b>
+                <br />
+                "Collaborating with others can often be a headache because I
+                have to keep a history or bookmark of the shared folder links in
+                case I want to go back and find something I want to work with."
+              </>
+            }
+            text2={
+              <>
+                <br />
+                "I find myself using online community chat rooms like Discord to
+                send beats because I can quickly communicate with others and be
+                in a community full of music creatives. Sending beats via email
+                can sometimes feel like a one way door and the process is
+                slower."
+              </>
+            }
+            text3={
+              <>
+                <br />
+                "Receiving emails and attachments on Discord from collaborators
+                can get lost especially on top of other messages and emails."
+              </>
+            }
+          />
+          <BodyTextSplit
+            text1={
+              <>
+                <b>Insights:</b>
+                <br />
+                &bull; Inefficient system for retrieving files
+                <br />
+                Keeping track of shared folder links can be tedious and
+                forgettable. It requires manually maintaining a history or
+                bookmarking the links, which can become overwhelming when
+                working with multiple collaborators.
+              </>
+            }
+            text2={
+              <>
+                <br />
+                &bull; Email challenges
+                <br />
+                Email is perceived as a sluggish and one-sided communication
+                channel for sharing music files. Sending beats via email can be
+                restrictive, impeding swift and dynamic interactions with fellow
+                music creators. This limitation has the potential to disrupt
+                creative flow and hinder effective collaboration
+              </>
+            }
+            text3={
+              <>
+                <br />
+                &bull; Files can be overlooked
+                <br />
+                The influx of music files being shared contributes to the
+                overall message volume which can create challenges in managing
+                many files at once. This can result in missed
+                opportunities or delays in effectively collaborating with others.
               </>
             }
           />
@@ -113,6 +169,7 @@ function Spotify() {
             due to its unintuitive placement and current lack of features it
             current offers."
             comboClass="no-padding"
+            stagger={0.01}
           />
           <BodyTextSplit
             text1={
@@ -124,6 +181,25 @@ function Spotify() {
             }
             text2="Outlined below are the comprehensive results derived from the
             conducted survey."
+          />
+          <BodyTextSplit
+            text1={
+              <>
+                <b>A word from our participants</b>
+                <br />
+                "Difficult to invite/join friends. Didn’t know about it until
+                someone else showed me. There also lies the potential for
+                queuing songs that others don't enjoy."
+              </>
+            }
+            text2={
+              <>
+                <br />
+                "Anyone can play music with no restriction, so one person can
+                skip another's song and play what they want. Can't see who
+                played what song"
+              </>
+            }
           />
           <div className="preview-wrapepr">
             <div className="image-row vert">
@@ -159,25 +235,7 @@ function Spotify() {
               </div>
             </div>
           </div>
-          <BodyTextSplit
-            text1={
-              <>
-                <b>A word from our participants</b>
-                <br />
-                "Difficult to invite/join friends. Didn’t know about it until
-                someone else showed me. There also lies the potential for
-                queuing songs that others don't enjoy."
-              </>
-            }
-            text2={
-              <>
-                <br />
-                "Anyone can play music with no restriction, so one person can
-                skip another's song and play what they want. Can't see who
-                played what song"
-              </>
-            }
-          />
+
           <BodyTextSplit
             text1={
               <>
@@ -277,6 +335,7 @@ function Spotify() {
                 friends to his sessions.
               </>
             }
+            stagger={0.01}
           />
           <hr className="divider" />
           <BodyTextSplit
@@ -486,10 +545,10 @@ function Spotify() {
             }
           />
           <EndingNav
-            prevLink="/mechmarket"
-            nextLink="/sorette"
-            prevText="mechmarket"
-            nextText="sorette"
+            prevLink="/spotify-party"
+            nextLink="/mechmarket"
+            prevText="Spotify Party"
+            nextText="mechmarket"
           />
           <Footer />
         </div>
@@ -498,5 +557,5 @@ function Spotify() {
   );
 }
 
-export default Spotify;
+export default Sorette;
  

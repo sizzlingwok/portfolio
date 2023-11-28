@@ -1,5 +1,3 @@
-import React, { useEffect } from 'react';
-
 const BodyTextSplit = ({ text1, text2, text3, comboClass }) => {
 
   return (

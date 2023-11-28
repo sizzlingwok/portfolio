@@ -180,10 +180,9 @@
     .project-button {
         padding: 1rem;
     }
-    
+
     .project-header-wrapper {
         height: calc(100vh - 6rem);
-        justify-content: initial;
     }
 
     .project-header-container {
@@ -289,11 +288,4 @@
         padding-bottom: 2rem;
     }
 
-}
-
-@media (max-width: 640px) {
-    .project-header-wrapper {
-        height: calc(100vh - 6rem);
-        justify-content: initial;
-    }
 }

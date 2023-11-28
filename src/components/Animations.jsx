@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type'
 
 gsap.registerPlugin(ScrollTrigger);
-
+ScrollTrigger.refresh();
 export const SlideUp = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -120,7 +120,7 @@ export const SplitWord = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const elements = gsap.utils.toArray('.splitword');
-
+      
       elements.forEach((element) => {
         let animation;
         const staggerValue = element.classList.contains('long') ? 0.04 : 0.02;
@@ -153,7 +153,7 @@ export const SplitWord = () => {
           scrub: true,
         });
       });
-
+      
       return () => ctx.revert();
     });
   }, []);
@@ -179,7 +179,7 @@ export const SplitLetter = () => {
           }
         );
       });
-
+      ScrollTrigger.refresh();
       return () => ctx.revert();
     });
   }, []);
