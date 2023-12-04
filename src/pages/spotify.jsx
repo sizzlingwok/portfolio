@@ -9,8 +9,9 @@ import { ExpandDivider } from "../components/Animations";
 
 function Spotify() {
   ExpandDivider();
+
   return (
-    <div className="main">
+    <main className="main">
       <ProjectHeader
         title="Spotify Party"
         description1="Spotify Party strives to enhance the listening experience for users who enjoy music with others. While creating group sessions already exists on Spotify, it currently falls short in terms of functionality and could greatly benefit from improvements. Spotify Party will not only strengthen its current group session capabilities, but will also introduce captivating new features to foster an immersive and enjoyable journey of music exploration."
@@ -21,8 +22,8 @@ function Spotify() {
         videoSrc="https://ik.imagekit.io/hyikkegqv/spotifysessionplaylist.mp4"
         prototypeLink="https://www.figma.com/proto/5ciCRD3R2H8jz0fRfKJPJD/Spotify-Party-Landing-Page?page-id=0%3A1&type=design&node-id=1-2&viewport=1334%2C874%2C0.71&t=MT5QwGlDdOlSKv5J-1&scaling=scale-down"
       />
-      <div id="project" className="project-content-wrapper">
-        <div className="project-content">
+      <article id="project" className="project-content-wrapper">
+        <article className="project-content">
           <ImageHeader
             image1={{
               src: "images/spotify/preview1.webp",
@@ -49,7 +50,7 @@ function Spotify() {
             text2="Below are some of the distinct features that have been integrated into Spotify Party"
             comboClass="splitword"
           />
-          <div className="preview-wrapper">
+          <section className="preview-wrapper">
             <VideoPreview
               videoSrc="https://ik.imagekit.io/hyikkegqv/spotifyinvitefriend.mp4"
               title="Invite friends directly from the Friend Activity list"
@@ -74,7 +75,7 @@ function Spotify() {
               share the playlists with others."
             />
             <hr className="divider" />
-          </div>
+          </section>
           <BodyTextSplit
             text1={
               <>
@@ -93,17 +94,15 @@ function Spotify() {
               </>
             }
           />
-          <div className="preview-container img">
-            <div className="content-container">
-              <img
-                className="project-image"
-                src="images/spotify/firstclicktest.webp"
-                alt=""
-                draggable="false"
-                style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
-              />
-            </div>
-          </div>
+          <figure className="preview-container img">
+            <img
+              className="project-image"
+              src="images/spotify/firstclicktest.webp"
+              alt=""
+              draggable="false"
+              style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
+            />
+          </figure>
           <BodyTextSplit
             text1="A mere 28% of users were able to successfully locate the
             appropriate menu. This compelling insight bly suggests that the
@@ -125,8 +124,8 @@ function Spotify() {
             text2="Outlined below are the comprehensive results derived from the
             conducted survey."
           />
-          <div className="preview-wrapepr">
-            <div className="image-row vert">
+          <section className="preview-wrapepr">
+            <figure className="image-row vert">
               <img
                 className="project-image"
                 src="images/spotify/surveyresults1.webp"
@@ -134,31 +133,33 @@ function Spotify() {
                 draggable="false"
                 style={{ maxWidth: "45%", paddingTop: "4rem" }}
               />
-              <div className="content-details">
-                <div className="text-container">
-                  <div className="text-description semibold">But...</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-row">
-              <div className="content-container">
+              <figcaption className="content-details">
+                <figcaption className="text-container">
+                  <figcaption className="text-description semibold">
+                    But...
+                  </figcaption>
+                </figcaption>
+              </figcaption>
+            </figure>
+            <section className="image-row">
+              <figure className="content-container">
                 <img
                   className="project-image"
                   src="images/spotify/surveyresults2.webp"
                   alt=""
                   draggable="false"
                 />
-              </div>
-              <div className="content-container">
+              </figure>
+              <figure className="content-container">
                 <img
                   className="project-image"
                   src="images/spotify/surveyresults3.webp"
                   alt=""
                   draggable="false"
                 />
-              </div>
-            </div>
-          </div>
+              </figure>
+            </section>
+          </section>
           <BodyTextSplit
             text1={
               <>
@@ -292,32 +293,32 @@ function Spotify() {
             user experience as well as explore other related
             functionalities, uncovering valuable insights in the process."
           />
-          <div className="image-row top">
-            <div className="content-container">
+          <section className="image-row top">
+            <figure className="content-container">
               <img
                 className="project-image"
                 src="images/spotify/applemusic.webp"
                 alt=""
                 draggable="false"
               />
-            </div>
-            <div className="content-container">
+            </figure>
+            <figure className="content-container">
               <img
                 className="project-image"
                 src="images/spotify/amazonmusic.webp"
                 alt=""
                 draggable="false"
               />
-            </div>
-            <div className="content-container">
+            </figure>
+            <figure className="content-container">
               <img
                 className="project-image"
                 src="images/spotify/youtubemusic.webp"
                 alt=""
                 draggable="false"
               />
-            </div>
-          </div>
+            </figure>
+          </section>
           <BodyTextSplit
             text1={
               <>
@@ -363,7 +364,7 @@ function Spotify() {
           <ArchImages
             image1={{ src: "images/spotify/sitemap.webp", text: "Sitemap" }}
             image2={{
-              src: "images/spotify/userflow3.webp",
+              src: "images/spotify/userflow1.webp",
               text: "User initiates a group session and invites friends",
             }}
             image3={{
@@ -392,7 +393,7 @@ function Spotify() {
               </>
             }
           />
-          <div className="image-row vert">
+          <figure className="image-row vert">
             <img
               className="project-image"
               src="images/spotify/surveyresults4.webp"
@@ -400,18 +401,16 @@ function Spotify() {
               draggable="false"
               style={{ maxWidth: "45%", paddingTop: "4rem" }}
             />
-          </div>
-          <div className="preview-container img">
-            <div className="content-container">
-              <img
-                className="project-image"
-                src="images/spotify/surveyresults5.webp"
-                alt=""
-                draggable="false"
-                style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
-              />
-            </div>
-          </div>
+          </figure>
+          <figure className="preview-container img">
+            <img
+              className="project-image"
+              src="images/spotify/surveyresults5.webp"
+              alt=""
+              draggable="false"
+              style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
+            />
+          </figure>
           <BodyTextSplit
             text1="This is a great improvement over the 28% from the initial
             first-click test."
@@ -492,9 +491,9 @@ function Spotify() {
             nextText="sorette"
           />
           <Footer />
-        </div>
-      </div>
-    </div>
+        </article>
+      </article>
+    </main>
   );
 }
 

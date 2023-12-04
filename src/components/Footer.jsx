@@ -2,17 +2,17 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <hr
         className="divider"
       />
-      <div className="footer-wrapper">
+      <footer className="footer-wrapper">
         <div
           className="footer-name"
         >
           andy duong © 2023{" "}
         </div>
-        <div className="footer-nav">
+        <nav className="footer-nav">
           <a
             className="footer-nav-link"
             href="https://www.linkedin.com/in/andyduong510/"
@@ -27,9 +27,9 @@ function Footer() {
           >
             email
           </a>
-        </div>
-      </div>
-    </div>
+        </nav>
+      </footer>
+    </footer>
   );
 }
 

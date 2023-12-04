@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <Link to="/" 
         className="header-name fade-up-animation"
         style={{ "--animation-delay": ".3s" }}
       >
         andy duong
       </Link>
-      <div className="header-nav">
+      <nav className="header-nav">
         <Link to="/" 
           className="header-nav-link fade-up-animation"
           style={{ "--animation-delay": ".5s" }}
@@ -33,8 +33,8 @@ function Header() {
         >
           resume
         </a>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 

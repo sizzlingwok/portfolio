@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type'
 
 gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.refresh();
+
 export const SlideUp = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -77,6 +77,7 @@ export const ExpandDivider = () => {
             }
           },
           scrub: true,
+          markers: true,
         });
       });
     });
@@ -151,6 +152,7 @@ export const SplitWord = () => {
             }
           },
           scrub: true,
+          markers: true,
         });
       });
       

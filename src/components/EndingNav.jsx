@@ -9,16 +9,16 @@ function EndingNav({ prevLink, nextLink, prevText, nextText }) {
   EndingNavAnimation();
 
   return (
-    <div className="ending-nav-wrapper">
+    <nav className="ending-nav-wrapper">
       <Link to={prevLink} className="prev-nav">
-        <div className="nav-text">{prevText}</div>
+        <nav className="nav-text">{prevText}</nav>
         <div className="arrow">←</div>
       </Link>
       <Link to={nextLink} className="next-nav">
         <div className="arrow">→</div>
-        <div className="nav-text">{nextText}</div>
+        <nav className="nav-text">{nextText}</nav>
       </Link>
-    </div>
+    </nav>
   );
 }
 

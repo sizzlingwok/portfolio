@@ -133,7 +133,6 @@
         padding-left: calc(1rem + 5%);
         padding-right: calc(1rem + 5%);
         width: auto;
-        padding-bottom: 6rem;
     }
     .greet {
         font-size: 2.5rem;

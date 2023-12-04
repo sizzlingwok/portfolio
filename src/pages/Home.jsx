@@ -5,16 +5,16 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <div className="main">
-      <div className="landing">
+      <section className="landing">
         <div className="header-title">hello!~ 👋</div>
         <div className="landing-description">
           I'm Andy Duong, a Product Designer based in the Bay Area. I craft
           meaningful narratives fueled by my passion for music and art.
         </div>
         <div className="landing-direct">Scroll down to discover</div>
-      </div>
-      <div className="project-wrapper">
-        <div className="project">
+      </section>
+      <section className="project-wrapper">
+        <section className="project">
           <Link to="/spotify-party">
             <div className="thumbnail-container">
               <img
@@ -32,8 +32,8 @@ function Home() {
               exploration
             </div>
           </div>
-        </div>
-        <div className="project right-align">
+        </section>
+        <section className="project right-align">
           <div className="project-details right-align">
             <div className="title">sorette</div>
             <div className="description">Project Description</div>
@@ -48,8 +48,8 @@ function Home() {
               />
             </div>
           </Link>
-        </div>
-        <div className="wide-wrapper">
+        </section>
+        <section className="wide-wrapper">
           <div className="thumbnail-container wide">
             <img
               className="thumbnail"
@@ -62,11 +62,11 @@ function Home() {
             <div className="title">mechmarket</div>
             <div className="description">Project Description</div>
           </div>
-        </div>
-      </div>
-      <div className="footer-home-page">
+        </section>
+      </section>
+      <footer className="footer-home-page">
         <Footer />
-      </div>
+      </footer>
     </div>
   );
 }

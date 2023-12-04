@@ -5,6 +5,8 @@ import Home from './pages/Home.jsx';
 import Spotify from './pages/spotify.jsx';
 import Sorette from './pages/Sorette.jsx';
 import ScrollToTop from './ScrollToTop';
+import { ReactLenis } from '@studio-freight/react-lenis';
+
 import './animations.css';
 import './App.css';
 import './index.css';
@@ -13,6 +15,13 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      {/* <ReactLenis
+        root
+        options={{
+          duration: 0.5,
+          easing: (t) => (t === 1 ? 1 : 1 - Math.pow(1 - t, 5)),
+        }}
+      ></ReactLenis> */}
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

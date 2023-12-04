@@ -25,16 +25,16 @@ function Sorette() {
         <div className="project-content">
           <ImageHeader
             image1={{
-              src: "images/spotify/preview1.webp",
+              src: "images/sorette/preview1.webp",
             }}
             image2={{
-              src: "images/spotify/preview2.webp",
+              src: "images/sorette/preview2.webp",
             }}
             image3={{
-              src: "images/spotify/preview3.webp",
+              src: "images/sorette/preview3.webp",
             }}
             image4={{
-              src: "images/spotify/preview4.webp",
+              src: "images/sorette/preview4.webp",
             }}
           />
           <hr className="divider" />
@@ -153,7 +153,7 @@ function Sorette() {
             <div className="content-container">
               <img
                 className="project-image"
-                src="images/spotify/firstclicktest.webp"
+                src="images/sorette/firstclicktest.webp"
                 alt=""
                 draggable="false"
                 style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
@@ -205,7 +205,7 @@ function Sorette() {
             <div className="image-row vert">
               <img
                 className="project-image"
-                src="images/spotify/surveyresults1.webp"
+                src="images/sorette/surveyresults1.webp"
                 alt=""
                 draggable="false"
                 style={{ maxWidth: "45%", paddingTop: "4rem" }}
@@ -220,7 +220,7 @@ function Sorette() {
               <div className="content-container">
                 <img
                   className="project-image"
-                  src="images/spotify/surveyresults2.webp"
+                  src="images/sorette/surveyresults2.webp"
                   alt=""
                   draggable="false"
                 />
@@ -228,7 +228,7 @@ function Sorette() {
               <div className="content-container">
                 <img
                   className="project-image"
-                  src="images/spotify/surveyresults3.webp"
+                  src="images/sorette/surveyresults3.webp"
                   alt=""
                   draggable="false"
                 />
@@ -355,7 +355,7 @@ function Sorette() {
             <div className="content-container">
               <img
                 className="project-image"
-                src="images/spotify/applemusic.webp"
+                src="images/sorette/applemusic.webp"
                 alt=""
                 draggable="false"
               />
@@ -363,7 +363,7 @@ function Sorette() {
             <div className="content-container">
               <img
                 className="project-image"
-                src="images/spotify/amazonmusic.webp"
+                src="images/sorette/amazonmusic.webp"
                 alt=""
                 draggable="false"
               />
@@ -371,7 +371,7 @@ function Sorette() {
             <div className="content-container">
               <img
                 className="project-image"
-                src="images/spotify/youtubemusic.webp"
+                src="images/sorette/youtubemusic.webp"
                 alt=""
                 draggable="false"
               />
@@ -420,17 +420,17 @@ function Sorette() {
             }
           />
           <ArchImages
-            image1={{ src: "images/spotify/sitemap.webp", text: "Sitemap" }}
+            image1={{ src: "images/sorette/sitemap.webp", text: "Sitemap" }}
             image2={{
-              src: "images/spotify/userflow3.webp",
+              src: "images/sorette/userflow1.webp",
               text: "User initiates a group session and invites friends",
             }}
             image3={{
-              src: "images/spotify/userflow2.webp",
+              src: "images/sorette/userflow2.webp",
               text: "User is invited to a group session",
             }}
             image4={{
-              src: "images/spotify/userflow3.webp",
+              src: "images/sorette/userflow3.webp",
               text: "User views curated group session playlist",
             }}
           />
@@ -454,7 +454,7 @@ function Sorette() {
           <div className="image-row vert">
             <img
               className="project-image"
-              src="images/spotify/surveyresults4.webp"
+              src="images/sorette/surveyresults4.webp"
               alt=""
               draggable="false"
               style={{ maxWidth: "45%", paddingTop: "4rem" }}
@@ -464,7 +464,7 @@ function Sorette() {
             <div className="content-container">
               <img
                 className="project-image"
-                src="images/spotify/surveyresults5.webp"
+                src="images/sorette/surveyresults5.webp"
                 alt=""
                 draggable="false"
                 style={{ paddingTop: "4rem", paddingBottom: "4rem" }}

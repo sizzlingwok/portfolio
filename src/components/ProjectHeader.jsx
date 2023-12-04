@@ -14,27 +14,31 @@ function ProjectHeader({ title, description1, description2, role, tools, timelin
             <source src={videoSrc} type="video/mp4" />
           </video>
         </div>
-        <div className="project-header-wrapper">
-          <div className="project-header-container">
-            <div className="title project-title splitletter">{title}</div>
-            <div className="project-header-details">
+        <section className="project-header-wrapper">
+          <section className="project-header-container">
+            <p className="title project-title splitletter">{title}</p>
+            <section className="project-header-details">
               <hr className="divider" />
-              <div className="project-description-wrapper">
-                <div className="project-description splitwordheader">{description1}</div>
-                <div className="project-description splitwordheader long">{description2}</div>
-              </div>
-              <div className="list-container">
-                <div className="project-description splitwordheader long">
+              <section className="project-description-wrapper">
+                <p className="project-description splitwordheader">
+                  {description1}
+                </p>
+                <p className="project-description splitwordheader long">
+                  {description2}
+                </p>
+              </section>
+              <section className="list-container">
+                <p className="project-description splitwordheader long">
                   <b>Role</b> - {role}
-                </div>
-                <div className="project-description splitwordheader long">
+                </p>
+                <p className="project-description splitwordheader long">
                   <b>Tools</b> - {tools}
-                </div>
-                <div className="project-description splitwordheader long">
+                </p>
+                <p className="project-description splitwordheader long">
                   <b>Timeline</b> - {timeline}
-                </div>
-              </div>
-              <div className="project-buttons slideup">
+                </p>
+              </section>
+              <section className="project-buttons slideup">
                 <button
                   className="project-button"
                   onClick={(event) => {
@@ -61,10 +65,10 @@ function ProjectHeader({ title, description1, description2, role, tools, timelin
                     View Prototype
                   </a>
                 </button>
-              </div>
-            </div>
-          </div>
-        </div>
+              </section>
+            </section>
+          </section>
+        </section>
       </>
     );
 }
