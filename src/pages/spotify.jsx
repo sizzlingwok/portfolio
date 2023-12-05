@@ -9,7 +9,7 @@ import { ExpandDivider } from "../components/Animations";
 
 function Spotify() {
   ExpandDivider();
-
+  
   return (
     <main className="main">
       <ProjectHeader

@@ -1,9 +1,9 @@
 import React from 'react';
-import { useLenis } from "@studio-freight/react-lenis";
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import { SlideUp, SplitLetter, SplitWordHeader } from './Animations';
-
+import gsap from 'gsap';
 function ProjectHeader({ title, description1, description2, role, tools, timeline, videoSrc, prototypeLink }) {
-    const lenis = useLenis();  
+    gsap.registerPlugin(ScrollToPlugin);
     SplitWordHeader();
     SplitLetter();
     SlideUp();
@@ -41,20 +41,15 @@ function ProjectHeader({ title, description1, description2, role, tools, timelin
               <section className="project-buttons slideup">
                 <button
                   className="project-button"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    lenis.scrollTo("#project", {
-                      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+                  onClick={() => {
+                    gsap.to(window, {
                       duration: 1,
+                      scrollTo: { y: "#project"},
+                      ease: "power3.out",
                     });
-                    window.history.replaceState(
-                      {},
-                      document.title,
-                      window.location.pathname
-                    );
                   }}
                 >
-                  <a href="#project">View Case Study</a>
+                  View Case Study
                 </button>
                 <button className="project-button">
                   <a

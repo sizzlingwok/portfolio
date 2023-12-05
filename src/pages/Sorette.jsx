@@ -9,6 +9,7 @@ import { ExpandDivider } from "../components/Animations";
 
 function Sorette() {
   ExpandDivider();
+  
   return (
     <main className="main">
       <ProjectHeader
