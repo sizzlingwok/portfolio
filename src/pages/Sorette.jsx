@@ -10,7 +10,7 @@ import { ExpandDivider } from "../components/Animations";
 function Sorette() {
   ExpandDivider();
   return (
-    <div className="main">
+    <main className="main">
       <ProjectHeader
         title="sorette"
         description1="sorette is an innovative desktop cloud-sharing service designed for music professionals, offering seamless collaboration opportunities. The primary objective of sorette is to empower music professionals with a powerful cloud-sharing platform, enhancing collaboration and creativity. It provides a suite of crafted tools and customization options to streamline workflows, simplify file organization, and foster a user-friendly environment conducive to enhanced productivity."
@@ -21,8 +21,8 @@ function Sorette() {
         videoSrc="https://ik.imagekit.io/hyikkegqv/sorettesearch.mp4"
         prototypeLink="https://www.figma.com/proto/gAKgOfJEIndvJweTn2Yg0l/sorette?page-id=0%3A1&type=design&node-id=1-51&viewport=-1204%2C721%2C0.42&scaling=scale-down&starting-point-node-id=1%3A51"
       />
-      <div id="project" className="project-content-wrapper">
-        <div className="project-content">
+      <article id="project" className="project-content-wrapper">
+        <article className="project-content">
           <ImageHeader
             image1={{
               src: "images/sorette/preview1.webp",
@@ -49,7 +49,7 @@ function Sorette() {
             text2="Below are some of the main features implemented into the sorette platform"
             comboClass="splitword"
           />
-          <div className="preview-wrapper">
+          <section className="preview-wrapper">
             <VideoPreview
               videoSrc="https://ik.imagekit.io/hyikkegqv/sorettesearch.mp4"
               title="Advanced file organization and search tools"
@@ -66,7 +66,7 @@ function Sorette() {
               description="Streamline engagements and collaborations with a centralized notification hub, enhancing organization and responsiveness."
             />
             <hr className="divider" />
-          </div>
+          </section>
           <BodyTextSplit
             text1={
               <>
@@ -551,9 +551,9 @@ function Sorette() {
             nextText="mechmarket"
           />
           <Footer />
-        </div>
-      </div>
-    </div>
+        </article>
+      </article>
+    </main>
   );
 }
 

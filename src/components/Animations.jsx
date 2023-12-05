@@ -16,6 +16,7 @@ export const SlideUp = () => {
         { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
       );
     });
+    ScrollTrigger.refresh(true);
 
     return () => ctx.revert();
   }, []);
@@ -145,8 +146,11 @@ export const SplitWord = () => {
                   opacity: 1,
                   duration: 2,
                   stagger: staggerValue,
-                  ease: 'power3.out',
+                  ease: "power3.out",
                   overwrite: true,
+                  onComplete: () => {
+                    ScrollTrigger.refresh(true);
+                  },
                 }
               );
             }
