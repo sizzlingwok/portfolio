@@ -42,7 +42,7 @@ function Home() {
           <div className="project-details right-align">
             <div className="home-project-title">
               <div className="header-tag splitletter">UX DESIGN</div>
-              <p>sorette</p>
+              <div className="splitletter">sorette</div>
             </div>
             <div className="description right-align splitword extend">
               Cloud sharing platform streamlining music collaboration with
@@ -74,8 +74,8 @@ function Home() {
 
           <div className="project-details">
             <div className="home-project-title">
-              <div className="header-tag">MOBILE DESIGN</div>
-              <p>mechmarket</p>
+              <div className="header-tag splitletter">MOBILE DESIGN</div>
+              <div className="splitletter">mechmarket</div>
             </div>
             <div className="description splitword extend">
               Enhancing the group listening experience for an immersive music
