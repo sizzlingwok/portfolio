@@ -461,7 +461,7 @@ function Spotify() {
                 Prototyping was challenging yet rewarding, refining my skills in
                 smart animate techniques and maintaining visual continuity
                 across platforms. Spotify Party marked my initial venture into
-                integrating both desktop and mobile platforms.
+                designing a responsive design for both the desktop and mobile platform.
               </>
             }
           />

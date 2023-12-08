@@ -43,8 +43,8 @@ function Sorette() {
             text1={
               <>
                 <b>Final Solution</b> - Creating an innovative app equipped with
-                specialized collaboration tools to bridge the gaps in
-                functionality found in current cloud-sharing platforms
+                specialized collaboration tools to bridge the gaps in features
+                found in current cloud-sharing platforms
               </>
             }
             text2="Below are some of the main features implemented into the sorette platform"
@@ -90,19 +90,18 @@ function Sorette() {
               <>
                 <b>A word from our participants</b>
                 <br />
-                "Collaborating with others can often be a headache because I
-                have to keep a history or bookmark of the shared folder links in
-                case I want to go back and find something I want to work with."
+                "I find myself using online community chat rooms like Discord to
+                send beats because I can quickly communicate and be in a
+                community with others. Sending beats via email can sometimes
+                feel like a one way door and the process is slower."
               </>
             }
             text2={
               <>
                 <br />
-                "I find myself using online community chat rooms like Discord to
-                send beats because I can quickly communicate with others and be
-                in a community full of music creatives. Sending beats via email
-                can sometimes feel like a one way door and the process is
-                slower."
+                "Collaborating with others can often be a headache because I
+                have to keep a history or bookmark of shared folder links if I
+                want to go back and find something I want to work with."
               </>
             }
             text3={
@@ -113,142 +112,25 @@ function Sorette() {
               </>
             }
           />
-          <BodyTextSplit
-            text1={
-              <>
-                <b>Insights:</b>
-                <br />
-                &bull; Inefficient system for retrieving files
-                <br />
-                Keeping track of shared folder links can be tedious and
-                forgettable. It requires manually maintaining a history or
-                bookmarking the links, which can become overwhelming when
-                working with multiple collaborators.
-              </>
-            }
-            text2={
-              <>
-                <br />
-                &bull; Email challenges
-                <br />
-                Email is perceived as a sluggish and one-sided communication
-                channel for sharing music files. Sending beats via email can be
-                restrictive, impeding swift and dynamic interactions with fellow
-                music creators. This limitation has the potential to disrupt
-                creative flow and hinder effective collaboration
-              </>
-            }
-            text3={
-              <>
-                <br />
-                &bull; Files can be overlooked
-                <br />
-                The influx of music files being shared contributes to the
-                overall message volume which can create challenges in managing
-                many files at once. This can result in missed
-                opportunities or delays in effectively collaborating with others.
-              </>
-            }
-          />
-          <div className="preview-container img">
-            <div className="content-container">
-              <img
-                className="project-image"
-                src="images/sorette/firstclicktest.webp"
-                alt=""
-                draggable="false"
-                style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
-              />
-            </div>
+          <div className="image-row">
+            <img
+              className="project-image"
+              src="images/sorette/surveyresults1.webp"
+              alt=""
+              draggable="false"
+              style={{ maxWidth: "45%", paddingTop: "4rem" }}
+            />
           </div>
-          <BodyTextSplit
-            text1="A mere 28% of users were able to successfully locate the
-            appropriate menu. This compelling insight bly suggests that the
-            menu's placement may be unintuitive, potentially leading users
-            to overlook its presence."
-            text2="Users tend to overlook the group session feature on the platform
-            due to its unintuitive placement and current lack of features it
-            current offers."
-            comboClass="no-padding"
-            stagger={0.01}
-          />
-          <BodyTextSplit
-            text1={
-              <>
-                I conducted a second user survey with <b>12 participants</b> who
-                rely on Spotify as their main music streaming platform to gain a
-                deeper understanding of their preferences.
-              </>
-            }
-            text2="Outlined below are the comprehensive results derived from the
-            conducted survey."
-          />
-          <BodyTextSplit
-            text1={
-              <>
-                <b>A word from our participants</b>
-                <br />
-                "Difficult to invite/join friends. Didn’t know about it until
-                someone else showed me. There also lies the potential for
-                queuing songs that others don't enjoy."
-              </>
-            }
-            text2={
-              <>
-                <br />
-                "Anyone can play music with no restriction, so one person can
-                skip another's song and play what they want. Can't see who
-                played what song"
-              </>
-            }
-          />
-          <div className="preview-wrapepr">
-            <div className="image-row vert">
-              <img
-                className="project-image"
-                src="images/sorette/surveyresults1.webp"
-                alt=""
-                draggable="false"
-                style={{ maxWidth: "45%", paddingTop: "4rem" }}
-              />
-              <div className="content-details">
-                <div className="text-container">
-                  <div className="text-description semibold">But...</div>
-                </div>
-              </div>
-            </div>
-            <div className="image-row">
-              <div className="content-container">
-                <img
-                  className="project-image"
-                  src="images/sorette/surveyresults2.webp"
-                  alt=""
-                  draggable="false"
-                />
-              </div>
-              <div className="content-container">
-                <img
-                  className="project-image"
-                  src="images/sorette/surveyresults3.webp"
-                  alt=""
-                  draggable="false"
-                />
-              </div>
-            </div>
-          </div>
-
           <BodyTextSplit
             text1={
               <>
                 <b>Significant takeaways for improvement:</b>
                 <br />
-                &bull; Enhancing user onboarding and communication to provide a
-                more intuitive experience for those wishing to invite and join
-                with friends.
+                &bull; Implementing features that enhance the user experience
+                when file sharing or collaborating with others.
                 <br />
-                &bull; Addressing potential conflicts stemming from track
-                skipping by any participant, necessitating the implementation of
-                measures to curb disruptive behavior by malicious users.
+                &bull; Create a space where users can share, comment, and stream
+                music files with ease.
               </>
             }
             text2={
@@ -263,9 +145,9 @@ function Sorette() {
           <BodyTextSplit
             text1={
               <>
-                <b>Problem Statement</b> - How can we revitalize group listening
-                for an improved experience, addressing challenges and enhancing
-                accessibility effectively?
+                <b>Problem Statement</b> - How can our platform elevate music
+                collaboration and address the absence of specialized features
+                found in existing cloud-sharing platforms?
               </>
             }
           />
@@ -274,29 +156,29 @@ function Sorette() {
               <>
                 <b>Insights:</b>
                 <br />
-                &bull; Group session feature is hidden
+                &bull; Files can be overlooked
                 <br />
-                The current placement of initiating a group session feature is
-                hidden under the device lists which users can overlook
+                The surge in shared music files increases message volume, posing
+                challenges in managing multiple files and potentially causing
+                missed opportunities or collaboration delays.
               </>
             }
             text2={
               <>
                 <br />
-                &bull; Feature does not exist on desktop platform
+                &bull; Email challenges
                 <br />
-                The lack of group session support on desktop Spotify puts
-                desktop users at a disadvantage
+                Email's perceived sluggishness hampers creative flow and
+                effective collaboration for sharing music files.
               </>
             }
             text3={
               <>
                 <br />
-                &bull; Lack of integration to friend activity
+                &bull; Inefficient system for retrieving files
                 <br />
-                Inviting friends to a group session lacks a direct in-app
-                feature, requiring users to resort to sending invite links via
-                text or social media
+                Keeping track of shared folder links can be tedious and
+                forgettable.
               </>
             }
           />
@@ -304,59 +186,55 @@ function Sorette() {
           <BodyTextSplit
             text1={
               <>
-                <b>User Persona</b> - Introducing Michelle & Edward
+                <b>User Persona</b> - Introducing Bryson & Taylor
               </>
             }
           />
           <BodyTextSplit
             text1={
               <>
-                <b>Michelle</b>
+                <b>Bryson</b>
                 <br />
-                Michelle is an party-goer who takes immense pleasure in curating
-                the perfect playlist for the parties she hosts. Prior to each
-                event, she dedicates herself to curate a selection of tracks,
-                ensuring an unforgettable experience for her guests. However,
-                her quest for new and exciting music is a constant endeavor. In
-                her desire to enhance the party experience, Michelle dreams of a
-                unique feature that would enable her guests to queue up their
-                favorite tracks with a voting system in place.
+                Bryson is a talented R&B artist who finds inspiration in
+                exploring different producers' beats to kickstart his
+                songwriting. His music revolves around slow tempo beats,
+                creating a mesmerizing and soulful vibe. However, he's
+                frustrated by the lack of an option to filter files by BPM and
+                genre, making it challenging to find the right fit for his
+                artistic vision.
               </>
             }
             text2={
               <>
-                <b>Edward</b>
+                <b>Taylor</b>
                 <br />
-                Edward is an avid music listener who loves to play songs with
-                his friends. He recently found out about the group session
-                feature Spotify implemented. He likes the idea of such feature,
-                but finds it tedious to constantly invite his friends through
-                links to listen along with him. He wishes there was a better
-                invitation system in place so he can continue to invite the same
-                friends to his sessions.
+                Taylor is a hip-hop producer collaborating with fellow producers
+                and artists. She encounters obstacles due to slow loading times
+                when trying to stream shared files sent to her. These issues
+                disrupt her workflow, creating challenges in maintaining a
+                continuous and seamless work experience.
               </>
             }
-            stagger={0.01}
           />
           <hr className="divider" />
           <BodyTextSplit
             text1={
               <>
-                <b>Competitive Analysis</b> - I conducted a comprehensive
-                analysis of Spotify's direct competitors, assessing their user
-                interface and implementation of listening group sessions with
-                others.
+                <b>Competitive Analysis</b> - I performed a thorough competitive
+                analysis to gain comprehensive insights into the features and
+                user experiences offered by popular cloud platforms like Google
+                Drive, Dropbox, and OneDrive.
               </>
             }
-            text2="This endeavor allowed me to delve deeper into their approach to
-            user experience as well as explore other related
-            functionalities, uncovering valuable insights in the process."
+            text2="This step is essential for
+            informed decision-making and ensuring that sorette distinguishes
+            itself in the market."
           />
           <div className="image-row top">
             <div className="content-container">
               <img
                 className="project-image"
-                src="images/sorette/applemusic.webp"
+                src="images/sorette/googledrive.webp"
                 alt=""
                 draggable="false"
               />
@@ -364,7 +242,7 @@ function Sorette() {
             <div className="content-container">
               <img
                 className="project-image"
-                src="images/sorette/amazonmusic.webp"
+                src="images/sorette/dropbox.webp"
                 alt=""
                 draggable="false"
               />
@@ -372,7 +250,7 @@ function Sorette() {
             <div className="content-container">
               <img
                 className="project-image"
-                src="images/sorette/youtubemusic.webp"
+                src="images/sorette/onedrive.webp"
                 alt=""
                 draggable="false"
               />
@@ -383,28 +261,29 @@ function Sorette() {
               <>
                 <b>Insights:</b>
                 <br />
-                &bull; Cross-platform compatibility
+                &bull; Similar file organization
                 <br />
-                These platforms allow the user to play media through multiple
-                devices including phones, tablets, computers and TVs.
+                These platforms provide a familiar file and folder structure,
+                allowing users to create and organize their files in a
+                hierarchical manner.
               </>
             }
             text2={
               <>
                 <br />
-                &bull; Similar user interface
+                &bull; Inuitive interface
                 <br />
-                All three platform provide a similar user experience and
-                interface to Spotify.
+                Each platform offers a user-friendly and intuitive interface,
+                making it easy for users to navigate and manage their files.
               </>
             }
             text3={
               <>
                 <br />
-                &bull; Playlist sharing
+                &bull; Sharing privileges
                 <br />
-                Users are able to share their playlists with others. The process
-                of sharing a playlist involves sending a shareable link.
+                Users are able to share entire folders allowing multiple users
+                to access and view files.
               </>
             }
           />
@@ -439,63 +318,55 @@ function Sorette() {
           <BodyTextSplit
             text1={
               <>
-                <b>Usability Testing</b> - Testing the Spotify Party prototype
+                <b>Wireframing</b> - Low fidelity prototypes
               </>
             }
             text2={
               <>
-                I performed a second first-click test with{" "}
-                <b>9 new participants</b> to evaluate user task comprehension of
-                the Spotify Party prototype. The test included showcasing both
-                mobile and desktop versions, focusing on participants' ability
-                to initiate a group session.
+                This was the initial design iteration of sorette when I first
+                worked on it. It definitely has come a long way since!
               </>
             }
+            comboClass="paddingbot"
           />
-          <div className="image-row vert">
-            <img
-              className="project-image"
-              src="images/sorette/surveyresults4.webp"
-              alt=""
-              draggable="false"
-              style={{ maxWidth: "45%", paddingTop: "4rem" }}
-            />
-          </div>
-          <div className="preview-container img">
-            <div className="content-container">
-              <img
-                className="project-image"
-                src="images/sorette/surveyresults5.webp"
-                alt=""
-                draggable="false"
-                style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
-              />
-            </div>
-          </div>
-          <BodyTextSplit
-            text1="This is a great improvement over the 28% from the initial
-            first-click test."
+          <ImageHeader
+            image1={{
+              src: "images/sorette/wireframe1.webp",
+            }}
+            image2={{
+              src: "images/sorette/wireframe2.webp",
+            }}
+            image3={{
+              src: "images/sorette/wireframe3.webp",
+            }}
+            image4={{
+              src: "images/sorette/wireframe4.webp",
+            }}
           />
+          <hr className="divider" />
           <BodyTextSplit
             text1={
               <>
-                <b>Insights:</b>
-                <br />
-                &bull; With a completion rate surpassing 77%, the results bly
-                indicate that the Spotify Party prototype exhibits a higher
-                level of intuitiveness and user-friendliness in comparison to
-                Spotify's current user interface.
+                <b>Visual Design</b> - Creating the mood
               </>
             }
             text2={
               <>
-                <br />
-                &bull; Participants were able to quickly navigate to the
-                corresponding interaction with an average time taken of 26.5
-                seconds
+                This moodboard captures alluring curves, intriguing light, and
+                shadow play, inspiring sorette's contemporary and pure design
+                aesthetic.
               </>
             }
+            comboClass="paddingbot"
           />
+          <div className="image-row">
+            <img
+              className="project-image"
+              src="images/sorette/moodboard.webp"
+              alt=""
+              draggable="false"
+            />
+          </div>
           <hr className="divider" />
           <BodyTextSplit
             text1={
@@ -509,20 +380,20 @@ function Sorette() {
               <>
                 <b>Takeaways:</b>
                 <br />
-                The inspiration for Spotify Party came from encountering a
-                limitation with the group session feature in the Spotify app.
-                This project allowed me to explore innovative design ideas while
-                adhering to guidelines, deepening my understanding of app
-                organization.
+                sorette represents the beginning of my venture into crafting
+                desktop web designs. It provided a canvas for
+                channeling my passion towards addressing real-world challenges
+                and strategically prioritizing features to deliver significant
+                value to users.
               </>
             }
             text2={
               <>
                 <br />
-                Prototyping was challenging yet rewarding, refining my skills in
-                smart animate techniques and maintaining visual continuity
-                across platforms. Spotify Party marked my initial venture into
-                integrating both desktop and mobile platforms.
+                Implementing various prototyping features fortified my
+                proficiency in utilizing Figma's capabilities. I also learned a lot from In summary, I
+                found immense joy in designing sorette, and I sincerely hope
+                that you thoroughly enjoy exploring its prototype!
               </>
             }
           />
@@ -531,17 +402,16 @@ function Sorette() {
               <>
                 <b>Things I would do differently:</b>
                 <br />
-                In hindsight, I devoted considerable time to manual tasks like
-                copying album cover arts and track information, which prolonged
-                the design phase.
+                Looking back, one thing I would do differently is improve my
+                time management. Juggling both sorette and mechmarket
+                simultaneously was an exhilarating experience.
               </>
             }
             text2={
               <>
-                <br />
-                Reflecting on this, I realize I could have streamlined the
-                process by reusing assets and focusing more on functional
-                aspects to expedite project completion.
+                <br />Allocating specific time blocks for each
+                project would have allowed me to better balance my efforts and
+                ensure more focused progress on both fronts.
               </>
             }
           />

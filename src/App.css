@@ -108,7 +108,7 @@ border-color:rgba(255, 255, 255, 0.25);
 .header-title {
   color: #f5f5f7;
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 48px;
   overflow: hidden;
   display: flex;
   line-height: auto;
@@ -127,7 +127,7 @@ border-color:rgba(255, 255, 255, 0.25);
 }
 
 .landing-direct {
-  color: white;
+  color: #f5f5f7;
   text-decoration: none;
   font-size: 16px;
   overflow: hidden;
@@ -158,18 +158,34 @@ border-color:rgba(255, 255, 255, 0.25);
   width: auto;
 }
 
+.home-project-title {
+  font-size: 32px;
+  color: #f5f5f7;
+  text-decoration: none;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
-  font-size: 2rem;
-  color: white;
+  font-size: 32px;
+  color: #f5f5f7;
   text-decoration: none;
 }
 
+.header-tag {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #f5f5f788;
+  font-weight: 350;
+
+}
 .description {
-  font-size: 1.125rem;
-  color: white;
+  font-size: 16px;
+  color: #f5f5f7;
   text-decoration: none;
-
-
+  max-width: 75%;
+  width: 100%;
 }
 /* Left align Project */
 .thumbnail-container a {
@@ -196,43 +212,11 @@ border-color:rgba(255, 255, 255, 0.25);
 .right-align-thumbnail-container {
   max-width: 100%;
   height: auto;
-
 }
 
-.right-align {
+.right-align, .description.right-align {
   text-align: right;
-  right: 0;
-}
-
-.project-details.right-align {
-  width: 40%;
-}
-
-/* Wide Project*/
-.wide-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  user-select: none;
-  gap: 1.5rem;
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.thumbnail-container.wide {
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  max-width: 80rem;
-  height: auto;
-
-}
-
-.project-details.wide {
-  flex-direction: row;
-  justify-content: space-between;
-  width: auto;
-  align-items: flex-start;
+  margin-left: auto;
 }
 
 /* spotify.jsx */
@@ -293,7 +277,7 @@ border-color:rgba(255, 255, 255, 0.25);
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  color: white;
+  color: #f5f5f7;
   text-decoration: none;
   gap: 1rem;
   padding-top: 2rem;
@@ -312,7 +296,7 @@ border-color:rgba(255, 255, 255, 0.25);
 .project-description-wrapper {
   flex-direction: row;
   font-size: 16px;
-  color: white;
+  color: #f5f5f7;
   width: auto;
   display: flex;
   gap: 5rem;
@@ -347,7 +331,7 @@ border-color:rgba(255, 255, 255, 0.25);
 .project-button {
   background-color: #ffffff15;
   border: none;
-  color: white;
+  color: #f5f5f7;
   padding: 1rem 1.5rem;
   text-align: center;
   text-decoration: none;
@@ -402,9 +386,13 @@ border-color:rgba(255, 255, 255, 0.25);
   font-kerning: none;
 }
 
+.text-container.paddingbot {
+  padding-bottom: 4.5rem;
+}
+
 .text-description, .nav-text, .arrow {
   font-size: 16px;
-  color: white;
+  color: #f5f5f7;
   max-width: 30rem;
   user-select: none;
   line-height: 1.3;
