@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home.jsx';
 import Spotify from './pages/Spotify.jsx';
-import Sorette from './pages/Sorette.jsx';
+import Sorette from './pages/sorette.jsx';
 import Mechmarket from './pages/mechmarket.jsx';
 import ScrollToTop from './ScrollToTop';
 
