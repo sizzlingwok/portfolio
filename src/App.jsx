@@ -21,7 +21,6 @@ function App() {
         <Route path="/spotify-party" element={<Spotify />} />
         <Route path="/sorette" element={<Sorette />} />
         <Route path="/mechmarket" element={<Mechmarket />} />
-        
       </Routes>
     </Router>
   );
