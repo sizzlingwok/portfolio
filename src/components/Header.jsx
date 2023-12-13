@@ -1,25 +1,46 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import gsap from 'gsap';
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
 function Header() {
+  gsap.registerPlugin(ScrollToPlugin);
+  const location = useLocation();
+
+  const handleLinkClick = (event, path) => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: 0 },
+      ease: 'power3.out',
+    });
+
+    if (path === location.pathname) {
+      event.preventDefault();
+    }
+  };
+
   return (
     <header className="header">
-      <Link to="/" 
+      <Link
+        to="/"
         className="header-name fade-up-animation"
         style={{ "--animation-delay": ".3s" }}
+        onClick={(e) => handleLinkClick(e, '/')}
       >
         andy duong
       </Link>
       <nav className="header-nav">
-        <Link to="/" 
+        <Link
+          to="/"
           className="header-nav-link fade-up-animation"
           style={{ "--animation-delay": ".5s" }}
+          onClick={(e) => handleLinkClick(e, '/')}
         >
           work
         </Link>
         <Link
           className="header-nav-link fade-up-animation"
-          to="#about"
+          to="/about"
           style={{ "--animation-delay": ".7s" }}
         >
           about

@@ -61,7 +61,7 @@ function Home() {
           </Link>
         </section>
         <section className="project projectslideup3">
-          <Link to="/spotify-party">
+          <Link to="/mechmarket">
             <div className="thumbnail-container">
               <img
                 className="thumbnail"
@@ -71,13 +71,12 @@ function Home() {
               />
             </div>
           </Link>
-
           <div className="project-details">
             <div className="home-project-title">
               <div className="header-tag splitletter">MOBILE DESIGN</div>
               <div className="splitletter">mechmarket</div>
             </div>
-            <div className="description splitword extend">
+            <div className="description splitword home">
               Enhancing the group listening experience for an immersive music
               exploration
             </div>
