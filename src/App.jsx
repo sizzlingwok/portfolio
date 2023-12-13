@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home.jsx';
 import Spotify from './pages/spotify.jsx';
-import Sorette from './pages/sorette.jsx';
+// import Sorette from './pages/sorette.jsx';
 import Mechmarket from './pages/mechmarket.jsx';
 import ScrollToTop from './ScrollToTop';
 
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/spotify-party" element={<Spotify />} />
-        <Route path="/sorette" element={<Sorette />} />
+        {/* <Route path="/sorette" element={<Sorette />} /> */}
         <Route path="/mechmarket" element={<Mechmarket />} />
       </Routes>
     </Router>
