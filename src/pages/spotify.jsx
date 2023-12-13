@@ -44,7 +44,7 @@ function Spotify() {
               <>
                 <b>Final Solution</b> - Evolving the group listening experience
                 by introducing improved functionality and features for all
-                Spotify users
+                Spotify user
               </>
             }
             text2="Below are some of the distinct features that have been integrated into Spotify Party"
