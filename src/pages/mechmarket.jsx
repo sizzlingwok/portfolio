@@ -13,7 +13,7 @@ function mechmarket() {
   return (
     <main className="main">
       <ProjectHeader
-        title="Spotify Party"
+        title="mechmarket"
         description1="Spotify Party strives to enhance the listening experience for users who enjoy music with others. While creating group sessions already exists on Spotify, it currently falls short in terms of functionality and could greatly benefit from improvements. Spotify Party will not only strengthen its current group session capabilities, but will also introduce captivating new features to foster an immersive and enjoyable journey of music exploration."
         description2="I redesigned the elements in the current Spotify UI in Figma on both the mobile and desktop version of the app. I then implemented my design ideas and created functioning prototypes."
         role="UI/UX Designer"
