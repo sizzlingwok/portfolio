@@ -319,7 +319,6 @@ border-color:rgba(255, 255, 255, 0.25);
   justify-content: center;
   max-width: 100rem;
   margin: 0 auto;
-  gap: 10rem;
 }
 
 .project-description, .project-description a, .project-description.splitword, .about-description {

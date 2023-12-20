@@ -117,6 +117,12 @@
     }
 
     /* Project */
+    .project-header-wrapper, .about-header-wrapper {
+        height: auto;
+        padding-top: 20.3rem;
+        padding-bottom: 20.3rem;
+    }
+    
     .header-tag {
         font-size: 14px;
     }
