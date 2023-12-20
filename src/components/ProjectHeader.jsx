@@ -9,11 +9,6 @@ function ProjectHeader({ title, description1, description2, role, tools, timelin
     SlideUp();
     return (
       <>
-        <div className="fs-bg">
-          <video width="100%" height="100%" autoPlay loop muted playsInline>
-            <source src={videoSrc} type="video/mp4" />
-          </video>
-        </div>
         <section className="project-header">
           <section className="project-header-wrapper">
             <section className="project-header-container">
@@ -65,6 +60,11 @@ function ProjectHeader({ title, description1, description2, role, tools, timelin
               </section>
             </section>
           </section>
+          <div className="fs-bg">
+          <video width="100%" height="100%" autoPlay loop muted playsInline>
+            <source src={videoSrc} type="video/mp4" />
+          </video>
+        </div>
         </section>
       </>
     );
