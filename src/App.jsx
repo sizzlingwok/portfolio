@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Spotify from './pages/spotify.jsx';
-import Sorette from './pages/Sorette.jsx';
+import Sorette from './pages/sorette2.jsx';
 import Mechmarket from './pages/mechmarket.jsx';
 import ScrollToTop from './ScrollToTop';
 
