@@ -120,7 +120,7 @@
     .project-header-wrapper, .about-header-wrapper {
         height: auto;
         padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-bottom: 2rem;
     }
     
     .header-tag {
