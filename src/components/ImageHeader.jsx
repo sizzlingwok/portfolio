@@ -1,10 +1,15 @@
 import React from 'react';
-
 import { ImageZoom } from './ImageZoom';
 
-function ImageHeader({ image1, image2, image3, image4 }) {
+function ImageHeader({ image1, image2, image3, image4, padding }) {
+  const hasPadding = padding === 'yes';
+
+  const imageHeaderStyle = {
+    paddingBottom: hasPadding ? '4rem' : '0',
+  };
+
   return (
-    <section className="image-header-wrapper">
+    <section className="image-header-wrapper" style={imageHeaderStyle}>
       <section id="project-thumbnails" className="image-header">
         <figure className="project-image">
           <ImageZoom

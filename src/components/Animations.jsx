@@ -51,91 +51,177 @@ export const PreviewSlideUp = () => {
 
 export const ProjectSlideUp = () => {
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      const createTimeline = (projectSlideUpSelector) => {
-        const tl = gsap.timeline({ paused: true });
+    const createTimeline = (projectSlideUpSelector) => {
+      const tl = gsap.timeline({ paused: true });
 
-        const staggerValue = (element) => (element.classList.contains('short') ? 0.03 : 0.05);
+      const staggerValue = (element) => (element.classList.contains('short') ? 0.03 : 0.05);
 
-        const letterElements = gsap.utils.toArray(`${projectSlideUpSelector} .splitletter`);
-        letterElements.forEach((element) => {
-          const textSplit = new SplitType(element, { types: 'chars' });
-          const letters = textSplit.chars;
+      const letterElements = gsap.utils.toArray(`${projectSlideUpSelector} .splitletter`);
+      letterElements.forEach((element) => {
+        const textSplit = new SplitType(element, { types: 'chars' });
+        const letters = textSplit.chars;
 
-          gsap.set(letters, { opacity: 0 });
-          tl.fromTo(
-            letters,
-            { x: 10, opacity: 0 },
-            {
-              x: 0,
-              opacity: 1,
-              duration: 2,
-              stagger: staggerValue(element),
-              ease: 'power3.out',
-            },
-            0
-          );
-        });
-
-        const wordElements = gsap.utils.toArray(`${projectSlideUpSelector} .splitword`);
-        wordElements.forEach((element) => {
-          const staggerValue = (element) =>
-            element.classList.contains('home')
-              ? 0.08
-              : element.classList.contains('extend')
-              ? 0.06
-              : element.classList.contains('long')
-              ? 0.04
-              : 0.02;
-
-          const textSplit = new SplitType(element, { types: 'words' });
-          const words = textSplit.words;
-
-          gsap.set(words, { opacity: 0 });
-          tl.fromTo(
-            words,
-            { x: 10, rotationX: 45, opacity: 0 },
-            {
-              x: 0,
-              rotationX: 0,
-              opacity: 1,
-              duration: 2,
-              stagger: staggerValue(element),
-              ease: 'power3.out',
-            },
-            0
-          );
-        });
-
-
-        gsap.set(projectSlideUpSelector, { opacity: 0 });
+        gsap.set(letters, { opacity: 0 });
         tl.fromTo(
-          projectSlideUpSelector,
-          { y: 50, opacity: 0 },
-          { y: 0, opacity: 1, duration: 1, ease: 'power2.out' },
+          letters,
+          { x: 10, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 2,
+            stagger: staggerValue(element),
+            ease: 'power3.out',
+          },
           0
         );
+      });
 
-        ScrollTrigger.create({
-          trigger: projectSlideUpSelector,
-          start: 'top center',
-          onEnter: () => tl.play(),
-          once: true,
-        });
+      const wordElements = gsap.utils.toArray(`${projectSlideUpSelector} .splitword`);
+      wordElements.forEach((element) => {
+        const staggerValue = (element) =>
+          element.classList.contains('home')
+            ? 0.08
+            : element.classList.contains('extend')
+            ? 0.06
+            : element.classList.contains('long')
+            ? 0.04
+            : 0.02;
 
-        return tl;
-      };
+        const textSplit = new SplitType(element, { types: 'words' });
+        const words = textSplit.words;
 
-      const project1 = createTimeline('.projectslideup1');
-      const project2 = createTimeline('.projectslideup2');
-      const project3 = createTimeline('.projectslideup3');
+        gsap.set(words, { opacity: 0 });
+        tl.fromTo(
+          words,
+          { x: 10, rotationX: 45, opacity: 0 },
+          {
+            x: 0,
+            rotationX: 0,
+            opacity: 1,
+            duration: 2,
+            stagger: staggerValue(element),
+            ease: 'power3.out',
+          },
+          0
+        );
+      });
 
-      return () => {
-        project1.revert();
-        project2.revert();
-        project3.revert();
-      };
-    });
+      gsap.set(projectSlideUpSelector, { opacity: 0 });
+      tl.fromTo(
+        projectSlideUpSelector,
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: 'power2.out' },
+        0
+      );
+
+      ScrollTrigger.create({
+        trigger: projectSlideUpSelector,
+        start: 'top 55%',
+        onEnter: () => tl.play(),
+        scrub: true,
+      });
+
+      return tl;
+    };
+
+    const project1 = createTimeline('.projectslideup1');
+    const project2 = createTimeline('.projectslideup2');
+    const project3 = createTimeline('.projectslideup3');
+
+    return () => {
+      project1.revert();
+      project2.revert();
+      project3.revert();
+    };
+  }, []);
+};
+
+export const WorkSlideUp = () => {
+  useEffect(() => {
+    const createTimeline = (workSlideUpSelector) => {
+      const tl = gsap.timeline({ paused: true });
+
+      const staggerValue = (element) => (element.classList.contains('short') ? 0.03 : 0.05);
+
+      const letterElements = gsap.utils.toArray(`${workSlideUpSelector} .splitletter`);
+      letterElements.forEach((element) => {
+        const textSplit = new SplitType(element, { types: 'chars' });
+        const letters = textSplit.chars;
+
+        gsap.set(letters, { opacity: 0 });
+        tl.fromTo(
+          letters,
+          { x: 10, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 2,
+            stagger: staggerValue(element),
+            ease: 'power3.out',
+          },
+          0
+        );
+      });
+
+      const wordElements = gsap.utils.toArray(`${workSlideUpSelector} .splitword`);
+      wordElements.forEach((element) => {
+        const staggerValue = (element) =>
+          element.classList.contains('home')
+            ? 0.08
+            : element.classList.contains('extend')
+            ? 0.06
+            : element.classList.contains('long')
+            ? 0.04
+            : 0.02;
+
+        const textSplit = new SplitType(element, { types: 'words' });
+        const words = textSplit.words;
+
+        gsap.set(words, { opacity: 0 });
+        tl.fromTo(
+          words,
+          { x: 10, rotationX: 45, opacity: 0 },
+          {
+            x: 0,
+            rotationX: 0,
+            opacity: 1,
+            duration: 2,
+            stagger: staggerValue(element),
+            ease: 'power3.out',
+          },
+          0
+        );
+      });
+
+      gsap.set(workSlideUpSelector, { opacity: 0 });
+      tl.fromTo(
+        workSlideUpSelector,
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: 'power2.out' },
+        0
+      );
+
+      ScrollTrigger.create({
+        trigger: workSlideUpSelector,
+        start: 'top 75%',
+        onEnter: () => tl.play(),
+        scrub: true,
+      });
+
+      return tl;
+    };
+
+    const work1 = createTimeline('.workslideup1');
+    const work2 = createTimeline('.workslideup2');
+    const work3 = createTimeline('.workslideup3');
+    const work4 = createTimeline('.workslideup4');
+
+    return () => {
+      work1.revert();
+      work2.revert();
+      work3.revert();
+      work4.revert();
+    };
   }, []);
 };
 
@@ -284,34 +370,23 @@ export const EndingNavAnimation = () => {
       let animation;
 
       const animateIn = () => {
-        if (animation && animation.isActive()) {
-          return;
-        }
-
-        gsap.fromTo(
-          ".prev-nav",
-          { opacity: 0, x: 40 },
-          { opacity: 1, x: 0, duration: 1, ease: "power2.out", overwrite: true }
+        const tl = gsap.timeline();
+        tl.fromTo(
+          [".prev-nav", ".next-nav"],
+          { opacity: 0, x: (index) => (index === 0 ? 40 : -40) },
+          { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
         );
-
-        gsap.fromTo(
-          ".next-nav",
-          { opacity: 0, x: -40 },
-          { opacity: 1, x: 0, duration: 1, ease: "power2.out", overwrite: true }
-        );
+        return tl;
       };
 
       ScrollTrigger.create({
-        trigger: ".prev-nav",
+        trigger: ".ending-nav-wrapper",
         start: "-150vh bottom",
-        onEnter: animateIn,
-        scrub: true,
-      });
-
-      ScrollTrigger.create({
-        trigger: ".next-nav",
-        start: "-150vh bottom",
-        onEnter: animateIn,
+        onEnter: () => {
+          if (!animation || !animation.isActive()) {
+            animation = animateIn();
+          }
+        },
         scrub: true,
       });
     });

@@ -6,12 +6,19 @@ import BodyTextSplit from "../components/BodyTextSplit"
 import ArchImages from "../components/ArcImages";
 import EndingNav from "../components/EndingNav";
 import { ExpandDivider } from "../components/Animations";
-
+import { Helmet } from 'react-helmet-async';
 function Sorette() {
   ExpandDivider();
   
   return (
     <main className="main">
+      <Helmet>
+        <title>Andy Duong | sorette</title>
+        <meta
+          name="description"
+          content="Cloud sharing platform streamlining music collaboration with others"
+        />
+      </Helmet>
       <ProjectHeader
         title="sorette"
         description1="sorette is an innovative desktop cloud-sharing service designed for music professionals, offering seamless collaboration opportunities. The primary objective of sorette is to empower music professionals with a powerful cloud-sharing platform, enhancing collaboration and creativity. It provides a suite of crafted tools and customization options to streamline workflows, simplify file organization, and foster a user-friendly environment conducive to enhanced productivity."
@@ -37,6 +44,7 @@ function Sorette() {
             image4={{
               src: "images/sorette/preview4.webp",
             }}
+            padding="yes"
           />
           <hr className="divider" />
           <BodyTextSplit

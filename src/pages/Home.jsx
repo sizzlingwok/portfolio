@@ -1,12 +1,20 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import { ExpandDivider, ProjectSlideUp } from "../components/Animations";
+import { Helmet } from 'react-helmet-async';
 function Home() {
   ExpandDivider();
   ProjectSlideUp();
   return (
     <div className="main">
+      <Helmet>
+        <title>Andy Duong</title>
+        <meta
+          name="description"
+          content="Andy Duong is an interdisciplinary designer influenced by music & art based in the Bay Area."
+        />
+      </Helmet>
       <section className="landing">
         <div className="header-title">hello!~ 👋</div>
         <div className="landing-description">
