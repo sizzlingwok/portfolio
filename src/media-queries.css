@@ -119,8 +119,8 @@
     /* Project */
     .project-header-wrapper, .about-header-wrapper {
         height: auto;
-        padding-top: 20.3rem;
-        padding-bottom: 20.3rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
     
     .header-tag {
@@ -248,5 +248,8 @@
     .about-container {
         flex-direction: column;
     }
-
+    
+    .about-description {
+        max-width: none;
+    }
 }
