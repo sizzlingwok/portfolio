@@ -305,7 +305,7 @@ export const SplitWord = () => {
                  : 0.02;
 
         const textsplit = new SplitType(element, { types: 'words' });
-        gsap.set(textsplit.words, { opacity: 0 });
+        gsap.set(textsplit.words, { opacity: 0, x: -10, rotationX: 45 });
         ScrollTrigger.create({
           trigger: element,
           start: 'top bottom',

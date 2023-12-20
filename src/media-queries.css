@@ -238,6 +238,10 @@
         padding-bottom: 2rem;
     }
 
+    .project-content, .about-work {
+        padding-top: 3rem;
+    }
+
     /* abouut */
     .embed-work {
         flex-direction: column;
