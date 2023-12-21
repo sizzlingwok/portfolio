@@ -24,8 +24,8 @@ function Home() {
         <div className="landing-direct">Scroll down to discover</div>
       </section>
       <section className="project-wrapper">
-        <section className="project projectslideup1">
-          <Link to="/spotify-party">
+        <Link to="/spotify-party">
+          <section className="project projectslideup1">
             <div className="thumbnail-container">
               <img
                 className="thumbnail"
@@ -34,30 +34,30 @@ function Home() {
                 draggable="false"
               />
             </div>
-          </Link>
-          <div className="project-details">
-            <div className="home-project-title">
-              <div className="header-tag splitletter">RESPONSIVE DESIGN</div>
-              <div className="splitletter">Spotify Party</div>
+            <div className="project-details">
+              <div className="home-project-title">
+                <div className="header-tag splitletter">RESPONSIVE DESIGN</div>
+                <div className="splitletter">Spotify Party</div>
+              </div>
+              <div className="description splitword long">
+                Enhancing the group listening experience for an immersive music
+                exploration
+              </div>
             </div>
-            <div className="description splitword home">
-              Enhancing the group listening experience for an immersive music
-              exploration
+          </section>
+        </Link>
+        <Link to="/sorette">
+          <section className="project right-align projectslideup2">
+            <div className="project-details right-align">
+              <div className="home-project-title">
+                <div className="header-tag splitletter">UX DESIGN</div>
+                <div className="splitletter">sorette</div>
+              </div>
+              <div className="description right-align splitword long">
+                Cloud sharing platform streamlining music collaboration with
+                others
+              </div>
             </div>
-          </div>
-        </section>
-        <section className="project right-align projectslideup2">
-          <div className="project-details right-align">
-            <div className="home-project-title">
-              <div className="header-tag splitletter">UX DESIGN</div>
-              <div className="splitletter">sorette</div>
-            </div>
-            <div className="description right-align splitword extend">
-              Cloud sharing platform streamlining music collaboration with
-              others
-            </div>
-          </div>
-          <Link to="/sorette">
             <div className="thumbnail-container">
               <img
                 className="thumbnail"
@@ -66,10 +66,10 @@ function Home() {
                 draggable="false"
               />
             </div>
-          </Link>
-        </section>
-        <section className="project projectslideup3">
-          <Link to="/mechmarket">
+          </section>
+        </Link>
+        <Link to="/mechmarket">
+          <section className="project projectslideup3">
             <div className="thumbnail-container">
               <img
                 className="thumbnail"
@@ -78,18 +78,18 @@ function Home() {
                 draggable="false"
               />
             </div>
-          </Link>
-          <div className="project-details">
-            <div className="home-project-title">
-              <div className="header-tag splitletter">MOBILE DESIGN</div>
-              <div className="splitletter">mechmarket</div>
+            <div className="project-details">
+              <div className="home-project-title">
+                <div className="header-tag splitletter">MOBILE DESIGN</div>
+                <div className="splitletter">mechmarket</div>
+              </div>
+              <div className="description splitword long">
+                Enhancing the group listening experience for an immersive music
+                exploration
+              </div>
             </div>
-            <div className="description splitword home">
-              Enhancing the group listening experience for an immersive music
-              exploration
-            </div>
-          </div>
-        </section>
+          </section>
+        </Link>
       </section>
       <footer className="footer-home-page">
         <Footer />

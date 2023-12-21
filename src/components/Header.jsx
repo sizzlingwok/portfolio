@@ -19,17 +19,17 @@ function Header() {
     }
   };
 
-  const Project = (event, path) => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: { y: ".project-wrapper", offsetY: 160 },
-      ease: 'power3.out',
-    });
+  // const Project = (event, path) => {
+  //   gsap.to(window, {
+  //     duration: 1,
+  //     scrollTo: { y: ".project-wrapper" },
+  //     ease: 'power3.out',
+  //   });
   
-    if (path === location.pathname) {
-      event.preventDefault();
-    }
-  };
+  //   if (path === location.pathname) {
+  //     event.preventDefault();
+  //   }
+  // };
 
   return (
     <header className="header">
@@ -46,7 +46,7 @@ function Header() {
           to="/"
           className="header-nav-link fade-up-animation"
           style={{ "--animation-delay": ".5s" }}
-          onClick={(e) => Project(e, '/')}
+          onClick={(e) => Top(e, '/')}
         >
           work
         </Link>
@@ -54,6 +54,7 @@ function Header() {
           className="header-nav-link fade-up-animation"
           to="/about"
           style={{ "--animation-delay": ".7s" }}
+          onClick={(e) => Top(e, '/about')}
         >
           about
         </Link>

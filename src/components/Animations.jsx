@@ -13,7 +13,7 @@ export const SlideUp = () => {
       gsap.fromTo(
         '.slideup',
         { opacity: 0, y: 25 },
-        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+        { opacity: 1, y: 0, duration: 1, ease: "expo.out" }
       );
     });
     ScrollTrigger.refresh(true);
@@ -31,7 +31,7 @@ export const PreviewSlideUp = () => {
           gsap.fromTo(
             element,
             { opacity: 0, y: 50 },
-            { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
+            { opacity: 1, y: 0, duration: 1, ease: "expo.out" }
           );
         };
 
@@ -64,7 +64,7 @@ export const ProjectSlideUp = () => {
         gsap.set(letters, { opacity: 0 });
         tl.fromTo(
           letters,
-          { x: 10, opacity: 0 },
+          { x: -5, opacity: 0 },
           {
             x: 0,
             opacity: 1,
@@ -79,11 +79,9 @@ export const ProjectSlideUp = () => {
       const wordElements = gsap.utils.toArray(`${projectSlideUpSelector} .splitword`);
       wordElements.forEach((element) => {
         const staggerValue = (element) =>
-          element.classList.contains('home')
-            ? 0.08
-            : element.classList.contains('extend')
+          element.classList.contains("extend")
             ? 0.06
-            : element.classList.contains('long')
+            : element.classList.contains("long")
             ? 0.04
             : 0.02;
 
@@ -93,7 +91,7 @@ export const ProjectSlideUp = () => {
         gsap.set(words, { opacity: 0 });
         tl.fromTo(
           words,
-          { x: 10, rotationX: 45, opacity: 0 },
+          { x: -5, rotationX: 100, opacity: 0 },
           {
             x: 0,
             rotationX: 0,
@@ -110,7 +108,7 @@ export const ProjectSlideUp = () => {
       tl.fromTo(
         projectSlideUpSelector,
         { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power2.out' },
+        { y: 0, opacity: 1, duration: 1, ease: 'expo.out' },
         0
       );
 
@@ -151,7 +149,7 @@ export const WorkSlideUp = () => {
         gsap.set(letters, { opacity: 0 });
         tl.fromTo(
           letters,
-          { x: 10, opacity: 0 },
+          { x: -5, opacity: 0 },
           {
             x: 0,
             opacity: 1,
@@ -180,14 +178,14 @@ export const WorkSlideUp = () => {
         gsap.set(words, { opacity: 0 });
         tl.fromTo(
           words,
-          { x: 10, rotationX: 45, opacity: 0 },
+          { x: -5, rotationX: 100, opacity: 0 },
           {
             x: 0,
             rotationX: 0,
             opacity: 1,
             duration: 2,
             stagger: staggerValue(element),
-            ease: 'power3.out',
+            ease: 'expo.out',
           },
           0
         );
@@ -197,7 +195,7 @@ export const WorkSlideUp = () => {
       tl.fromTo(
         workSlideUpSelector,
         { y: 50, opacity: 0 },
-        { y: 0, opacity: 1, duration: 1, ease: 'power2.out' },
+        { y: 0, opacity: 1, duration: 1, ease: 'expo.out' },
         0
       );
 
@@ -274,8 +272,8 @@ export const SplitWordHeader = () => {
         gsap.fromTo(
           textsplit.words,
           {
-            x: 10,
-            rotationX: 45,
+            x: -5,
+            rotationX: 100,
             opacity: 0,
           },
           {
@@ -284,7 +282,7 @@ export const SplitWordHeader = () => {
             opacity: 1,
             duration: 2,
             stagger: staggerValue,
-            ease: "power3.out",
+            ease: "expo.out",
           }
         );
       });
@@ -305,7 +303,7 @@ export const SplitWord = () => {
                  : 0.02;
 
         const textsplit = new SplitType(element, { types: 'words' });
-        gsap.set(textsplit.words, { opacity: 0, x: -10, rotationX: 45 });
+        gsap.set(textsplit.words, { opacity: 0, x: -5, rotationX: 100 });
         ScrollTrigger.create({
           trigger: element,
           start: 'top bottom',
@@ -314,8 +312,8 @@ export const SplitWord = () => {
               animation = gsap.fromTo(
                 textsplit.words,
                 {
-                  x: -10,
-                  rotationX: 45,
+                  x: -5,
+                  rotationX: 100,
                   opacity: 0,
                 },
                 {
@@ -349,9 +347,10 @@ export const SplitLetter = () => {
         const letters = textsplit.chars;
         gsap.fromTo(
           letters,
-          { x: 10, opacity: 0 },
+          { x: -5, opacity: 0, opacityX: 100 },
           {
             x: 0,
+            opacityX: 0,
             opacity: 1,
             duration: 2,
             stagger: staggerValue,
@@ -374,7 +373,7 @@ export const EndingNavAnimation = () => {
         tl.fromTo(
           [".prev-nav", ".next-nav"],
           { opacity: 0, x: (index) => (index === 0 ? 40 : -40) },
-          { opacity: 1, x: 0, duration: 1, ease: "power2.out" }
+          { opacity: 1, x: 0, duration: 1, ease: "power3.out" }
         );
         return tl;
       };
