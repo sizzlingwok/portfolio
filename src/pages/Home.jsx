@@ -73,7 +73,7 @@ function Home() {
             <div className="thumbnail-container">
               <img
                 className="thumbnail"
-                src="images/home/spotify-party-thumbnail.webp"
+                src="images/home/mechmarket-thumbnail.webp"
                 alt=""
                 draggable="false"
               />
@@ -84,8 +84,7 @@ function Home() {
                 <div className="splitletter">mechmarket</div>
               </div>
               <div className="description splitword long">
-                Enhancing the group listening experience for an immersive music
-                exploration
+                Mobile marketplace app dedicated to buying and selling keyboard related products
               </div>
             </div>
           </section>

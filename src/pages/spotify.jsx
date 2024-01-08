@@ -13,7 +13,7 @@ function Spotify() {
   return (
     <main className="main">
       <Helmet>
-        <title>Andy Duong | Spotify Party</title>
+        <title>Spotify Party | Andy Duong</title>
         <meta
           name="description"
           content="Enhancing the group listening experience for an immersive music exploration"

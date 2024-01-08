@@ -6,12 +6,12 @@ import ScrollToPlugin from 'gsap/ScrollToPlugin';
 function Header() {
   gsap.registerPlugin(ScrollToPlugin);
   const location = useLocation();
-  
+
   const Top = (event, path) => {
     gsap.to(window, {
       duration: 1,
       scrollTo: { y: 0 },
-      ease: 'power3.out',
+      ease: "power3.out",
     });
 
     if (path === location.pathname) {
@@ -19,17 +19,19 @@ function Header() {
     }
   };
 
-  // const Project = (event, path) => {
-  //   gsap.to(window, {
-  //     duration: 1,
-  //     scrollTo: { y: ".project-wrapper" },
-  //     ease: 'power3.out',
-  //   });
-  
-  //   if (path === location.pathname) {
-  //     event.preventDefault();
-  //   }
-  // };
+  const Project = (event, path) => {
+    if (location.pathname === "/") {
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: { y: ".project-wrapper" },
+        ease: "power3.out",
+      });
+
+      if (path === location.pathname) {
+        event.preventDefault();
+      }
+    }
+  };
 
   return (
     <header className="header">
@@ -37,7 +39,7 @@ function Header() {
         to="/"
         className="header-name fade-up-animation"
         style={{ "--animation-delay": ".3s" }}
-        onClick={(e) => Top(e, '/')}
+        onClick={(e) => Top(e, "/")}
       >
         andy duong
       </Link>
@@ -46,7 +48,7 @@ function Header() {
           to="/"
           className="header-nav-link fade-up-animation"
           style={{ "--animation-delay": ".5s" }}
-          onClick={(e) => Top(e, '/')}
+          onClick={(e) => Project(e, "/")}
         >
           work
         </Link>
@@ -54,7 +56,7 @@ function Header() {
           className="header-nav-link fade-up-animation"
           to="/about"
           style={{ "--animation-delay": ".7s" }}
-          onClick={(e) => Top(e, '/about')}
+          onClick={(e) => Top(e, "/about")}
         >
           about
         </Link>

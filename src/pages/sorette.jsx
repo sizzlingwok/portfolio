@@ -13,7 +13,7 @@ function Sorette() {
   return (
     <main className="main">
       <Helmet>
-        <title>Andy Duong | sorette</title>
+        <title>sorette | Andy Duong</title>
         <meta
           name="description"
           content="Cloud sharing platform streamlining music collaboration with others"

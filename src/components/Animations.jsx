@@ -114,7 +114,7 @@ export const ProjectSlideUp = () => {
 
       ScrollTrigger.create({
         trigger: projectSlideUpSelector,
-        start: 'top 55%',
+        start: 'top 60%',
         onEnter: () => tl.play(),
         scrub: true,
       });
@@ -347,10 +347,10 @@ export const SplitLetter = () => {
         const letters = textsplit.chars;
         gsap.fromTo(
           letters,
-          { x: -5, opacity: 0, opacityX: 100 },
+          { x: -5, opacity: 0, rotateX: 50 },
           {
             x: 0,
-            opacityX: 0,
+            rotateX: 0,
             opacity: 1,
             duration: 2,
             stagger: staggerValue,

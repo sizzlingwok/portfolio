@@ -13,36 +13,36 @@ function mechmarket() {
   return (
     <main className="main">
       <Helmet>
-        <title>Andy Duong | mechmarket</title>
+        <title>mechmarket | Andy Duong</title>
         <meta
           name="description"
-          content="Cloud sharing platform streamlining music collaboration with others"
+          content="Mobile marketplace app dedicated to buying and selling keyboard related products"
         />
       </Helmet>
       <ProjectHeader
         title="mechmarket"
-        description1="Spotify Party strives to enhance the listening experience for users who enjoy music with others. While creating group sessions already exists on Spotify, it currently falls short in terms of functionality and could greatly benefit from improvements. Spotify Party will not only strengthen its current group session capabilities, but will also introduce captivating new features to foster an immersive and enjoyable journey of music exploration."
-        description2="I redesigned the elements in the current Spotify UI in Figma on both the mobile and desktop version of the app. I then implemented my design ideas and created functioning prototypes."
+        description1="mechmarket is a dedicated marketplace app where users can buy and sell keyboard related products. mechmarket currently thrives as a subreddit on Reddit with over 282,000 members. Recognizing the potential for improvement, I believe the development of a dedicated mobile app would not only streamline the buying and selling experience, but also unlock a plethora of new features that were previously hindered by the traditional scope of Reddit's functionality."
+        description2="I managed the entire user experience process for this project from start to finish over the course of 10 weeks. I designed and delivered a working prototype for mechmarket."
         role="UI/UX Designer"
         tools="Figma, Google Forms, Optimal Workshop"
-        timeline="8 weeks (June - July 2023)"
+        timeline="10 weeks (Mar - May 2023)"
         videoSrc="https://ik.imagekit.io/hyikkegqv/spotifysessionplaylist.mp4"
-        prototypeLink="https://www.figma.com/proto/5ciCRD3R2H8jz0fRfKJPJD/Spotify-Party-Landing-Page?page-id=0%3A1&type=design&node-id=1-2&viewport=1334%2C874%2C0.71&t=MT5QwGlDdOlSKv5J-1&scaling=scale-down"
+        prototypeLink="https://www.figma.com/proto/o8NlugV7QcyQ7C078psBlQ/mechmarket-v2?page-id=0%3A1&type=design&node-id=6-171&viewport=329%2C355%2C0.18&t=56zZDqF4FIIZyHkK-1&scaling=scale-down&starting-point-node-id=197%3A12181&mode=design"
       />
       <article id="project" className="project-content-wrapper">
         <article className="project-content">
           <ImageHeader
             image1={{
-              src: "images/spotify/preview1.webp",
+              src: "images/mechmarket/preview1.webp",
             }}
             image2={{
-              src: "images/spotify/preview2.webp",
+              src: "images/mechmarket/preview2.webp",
             }}
             image3={{
-              src: "images/spotify/preview3.webp",
+              src: "images/mechmarket/preview3.webp",
             }}
             image4={{
-              src: "images/spotify/preview4.webp",
+              src: "images/mechmarket/preview4.webp",
             }}
             padding="yes"
           />
@@ -50,25 +50,22 @@ function mechmarket() {
           <BodyTextSplit
             text1={
               <>
-                <b>Final Solution</b> - Evolving the group listening experience
-                by introducing improved functionality and features for all
-                Spotify users
+                <b>Final Solution</b> - A dedicated mobile marketplace app featuring a better user
+                experience for buying and selling keyboard related products.
               </>
             }
-            text2="Below are some of the distinct features that have been integrated into Spotify Party"
+            text2="Below are some of the distinct features that were designed in mechmarket"
             comboClass="splitword"
           />
           <section className="preview-wrapper">
             <VideoPreview
               videoSrc="https://ik.imagekit.io/hyikkegqv/spotifyinvitefriend.mp4"
-              title="Invite friends directly from the Friend Activity list"
-              description="Easily invite friends directly within the app, eliminating
-              the need for external invitations through links or social
-              media."
+              title="See market data for products"
+              description="View current market trends to get a better estimate of current prices before buying and selling"
             />
             <VideoPreview
               videoSrc="https://ik.imagekit.io/hyikkegqv/spotifygroupsetting.mp4"
-              title="Moderate your group sessions"
+              title="Better search filters"
               description="Manage your sessions with customizable group settings.
               Grant admin privileges to others or enable/disable
               specific options, all geared towards providing a seamless
@@ -87,8 +84,7 @@ function mechmarket() {
           <BodyTextSplit
             text1={
               <>
-                <b>User Research</b> - Evaluating the user flow for initiating a
-                Spotify group session
+                <b>User Research</b> - Evaluating the buying and selling experience on mechmarket
               </>
             }
             text2={
@@ -105,7 +101,7 @@ function mechmarket() {
           <figure className="preview-container img">
             <img
               className="project-image"
-              src="images/spotify/firstclicktest.webp"
+              src="images/mechmarket/firstclicktest.webp"
               alt=""
               draggable="false"
               style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
@@ -136,7 +132,7 @@ function mechmarket() {
             <figure className="image-row vert">
               <img
                 className="project-image"
-                src="images/spotify/surveyresults1.webp"
+                src="images/mechmarket/surveyresults1.webp"
                 alt=""
                 draggable="false"
                 style={{ maxWidth: "45%", paddingTop: "4rem" }}
@@ -153,7 +149,7 @@ function mechmarket() {
               <figure className="content-container">
                 <img
                   className="project-image"
-                  src="images/spotify/surveyresults2.webp"
+                  src="images/mechmarket/surveyresults2.webp"
                   alt=""
                   draggable="false"
                 />
@@ -161,7 +157,7 @@ function mechmarket() {
               <figure className="content-container">
                 <img
                   className="project-image"
-                  src="images/spotify/surveyresults3.webp"
+                  src="images/mechmarket/surveyresults3.webp"
                   alt=""
                   draggable="false"
                 />
@@ -305,7 +301,7 @@ function mechmarket() {
             <figure className="content-container">
               <img
                 className="project-image"
-                src="images/spotify/applemusic.webp"
+                src="images/mechmarket/applemusic.webp"
                 alt=""
                 draggable="false"
               />
@@ -313,7 +309,7 @@ function mechmarket() {
             <figure className="content-container">
               <img
                 className="project-image"
-                src="images/spotify/amazonmusic.webp"
+                src="images/mechmarket/amazonmusic.webp"
                 alt=""
                 draggable="false"
               />
@@ -321,7 +317,7 @@ function mechmarket() {
             <figure className="content-container">
               <img
                 className="project-image"
-                src="images/spotify/youtubemusic.webp"
+                src="images/mechmarket/youtubemusic.webp"
                 alt=""
                 draggable="false"
               />
@@ -370,17 +366,17 @@ function mechmarket() {
             }
           />
           <ArchImages
-            image1={{ src: "images/spotify/sitemap.webp", text: "Sitemap" }}
+            image1={{ src: "images/mechmarket/sitemap.webp", text: "Sitemap" }}
             image2={{
-              src: "images/spotify/userflow1.webp",
+              src: "images/mechmarket/userflow1.webp",
               text: "User initiates a group session and invites friends",
             }}
             image3={{
-              src: "images/spotify/userflow2.webp",
+              src: "images/mechmarket/userflow2.webp",
               text: "User is invited to a group session",
             }}
             image4={{
-              src: "images/spotify/userflow3.webp",
+              src: "images/mechmarket/userflow3.webp",
               text: "User views curated group session playlist",
             }}
           />
@@ -404,7 +400,7 @@ function mechmarket() {
           <figure className="image-row vert">
             <img
               className="project-image"
-              src="images/spotify/surveyresults4.webp"
+              src="images/mechmarket/surveyresults4.webp"
               alt=""
               draggable="false"
               style={{ maxWidth: "45%", paddingTop: "4rem" }}
@@ -413,7 +409,7 @@ function mechmarket() {
           <figure className="preview-container img">
             <img
               className="project-image"
-              src="images/spotify/surveyresults5.webp"
+              src="images/mechmarket/surveyresults5.webp"
               alt=""
               draggable="false"
               style={{ paddingTop: "4rem", paddingBottom: "4rem" }}
@@ -469,7 +465,8 @@ function mechmarket() {
                 Prototyping was challenging yet rewarding, refining my skills in
                 smart animate techniques and maintaining visual continuity
                 across platforms. Spotify Party marked my initial venture into
-                designing a responsive design for both the desktop and mobile platform.
+                designing a responsive design for both the desktop and mobile
+                platform.
               </>
             }
           />
